@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quiq POS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/q_fav.png" type="image/gif" sizes="16x16">
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!--Bootstrap 3.3.7-->
+    <link href="css/material.css" rel="stylesheet"><!--Material UI-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /><!--Font-awesome-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"><!--Google Fonts-->
+    <link rel="stylesheet" type="text/css" href="css/quiq_pos_style.css"><!--quiq Stylesheet-->
+</head>
+<body>
+	<div class="outer_frame flexBox">
+		<div class="top_bar flexBox">
+			<div class="brand_button flexBox">
+				<div class="logo_image"><img src="images/quiq_pos_logo.png"></div>
+				<button id="menuBtn" class="menu_pin arrw">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<div class="top_bar_section flexBox">
+				<div class="info_crumbs">Login Time: <label>6:10PM</label></div>
+				<div class="info_crumbs">Shift: <label>2</label></div>
+				<div class="info_crumbs">POS: <label>Restaurant</label></div>
+				<div class="info_crumbs">Last Doc No: <label>135</label></div>
+				<div class="info_crumbs">Bill Amount: <label>260.00</label></div>
+				<div class="info_crumbs">Table No: <label>T3</label></div>
+				<div class="info_crumbs">Waiter Name: <label>Admins</label></div>
+				<div class="top_bar_date flexBox">08/08/2018</div>
+				<!--<div class="badge_msg">
+					<div class="badge_icon"><img src="images/msg_icon.png"></div>
+					<div class="badge_count">2</div>
+				</div>-->
+				<div class="user_btn flexBox">
+					<label>Admin</label>
+					<i class="fa fa-caret-down"></i>
+				</div>
+			</div>
+		</div>
+		<div class="middle_section_q flexBox">
+			<div class="side_panel mobHid tltip" id="sidePnl">
+				<ul>
+					<li><button id="tt1"><img src="images/icon_sample.png">Merge Kot</button>
+						<div class="mdl-tooltip" data-mdl-for="tt1">
+							Merge Kot
+						</div>
+					</li>
+					<li><button id="tt2"><img src="images/icon_sample.png">View Bill</button>
+						<div class="mdl-tooltip" data-mdl-for="tt2">
+							View Bill
+						</div>
+					</li>
+					<li><button id="tt3"><img src="images/icon_sample.png">Settle</button>
+						<div class="mdl-tooltip" data-mdl-for="tt3">
+							Settle
+						</div>
+					</li>
+					<li><button id="tt4"><img src="images/icon_sample.png">Void Kot</button>
+						<div class="mdl-tooltip" data-mdl-for="tt4">
+							Void Bill
+						</div>
+					</li>
+					<li><button id="tt5"><img src="images/icon_sample.png">Void Bill</button>
+						<div class="mdl-tooltip" data-mdl-for="tt5">
+							View Bill
+						</div>
+					</li>
+					<li><button id="tt6"><img src="images/icon_sample.png">Pay In</button>
+						<div class="mdl-tooltip" data-mdl-for="tt6">
+							Pay In
+						</div>
+					</li>
+					<li><button id="tt7"><img src="images/icon_sample.png">Pay Out</button>
+						<div class="mdl-tooltip" data-mdl-for="tt7">
+							Pay Out
+						</div>
+					</li>
+					<li><button id="tt8"><img src="images/icon_sample.png">Shift Close</button>
+						<div class="mdl-tooltip" data-mdl-for="tt8">
+							Shift Close
+						</div>
+					</li>
+					<li><button id="tt9"><img src="images/icon_sample.png">Change Table</button>
+						<div class="mdl-tooltip" data-mdl-for="tt9">
+							Change Table
+						</div>
+					</li>
+					<li><button id="tt10"><img src="images/icon_sample.png">Change Pin</button>
+						<div class="mdl-tooltip" data-mdl-for="tt10">
+							Change Pin
+						</div>
+					</li>
+					<li><button id="tt11"><img src="images/icon_sample.png">Split Bill</button>
+						<div class="mdl-tooltip" data-mdl-for="tt11">
+							Split Bill
+						</div>
+					</li>
+					<li><button id="tt12"><img src="images/icon_sample.png">Hold / Unhold</button>
+						<div class="mdl-tooltip" data-mdl-for="tt12">
+							Hold / Unhold
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="main_frame_q" id="mainPnl">
+				<div class="right_outer_frame flexBox">
+					<div class="bill_section">
+						<div class="head_selection flexBox al_it">
+							<select class="select_box">
+								<option>Restaurant</option>
+							</select>
+							<label>T5: Walk-in Client</label>
+							<button class="btn_quiq al_right"><i class="fa fa-plus"></i> Add Customer</button>
+						</div>
+						<div class="table_bill">
+							<div class="bill_title flexBox">
+								<label class="prdct_line">Product</label>
+								<label class="al_right prce_line">Price</label>
+								<label class="qty_line">Quantity</label>
+							</div>
+							<div class="bill_item_list">
+								<div class="bill_item_line flexBox al_it">
+									<div class="itm_nme"><button><i class="fa fa-times"></i></button> Tandoori Chicken</div>
+									<div class="itm_price al_right">120.00</div>
+									<div class="itm_qty"><button><i class="fa fa-minus"></i></button><label>2.00</label><button><i class="fa fa-plus"></i></button></div>
+								</div>
+								<div class="bill_item_line flexBox al_it">
+									<div class="itm_nme"><button><i class="fa fa-times"></i></button> Tandoori Chicken</div>
+									<div class="itm_price al_right">120.00</div>
+									<div class="itm_qty"><button><i class="fa fa-minus"></i></button><label>2.00</label><button><i class="fa fa-plus"></i></button></div>
+								</div>
+								<div class="bill_item_line flexBox al_it">
+									<div class="itm_nme"><button><i class="fa fa-times"></i></button> Tandoori Chicken</div>
+									<div class="itm_price al_right">120.00</div>
+									<div class="itm_qty"><button><i class="fa fa-minus"></i></button><label>2.00</label><button><i class="fa fa-plus"></i></button></div>
+								</div>
+								<div class="bill_item_line flexBox al_it">
+									<div class="itm_nme"><button><i class="fa fa-times"></i></button> Tandoori Chicken</div>
+									<div class="itm_price al_right">120.00</div>
+									<div class="itm_qty"><button><i class="fa fa-minus"></i></button><label>2.00</label><button><i class="fa fa-plus"></i></button></div>
+								</div>
+								<div class="bill_item_line flexBox al_it">
+									<div class="itm_nme"><button><i class="fa fa-times"></i></button> Tandoori Chicken</div>
+									<div class="itm_price al_right">120.00</div>
+									<div class="itm_qty"><button><i class="fa fa-minus"></i></button><label>2.00</label><button><i class="fa fa-plus"></i></button></div>
+								</div>
+								<div class="bill_item_line flexBox al_it">
+									<div class="itm_nme"><button><i class="fa fa-times"></i></button> Tandoori Chicken</div>
+									<div class="itm_price al_right">120.00</div>
+									<div class="itm_qty"><button><i class="fa fa-minus"></i></button><label>2.00</label><button><i class="fa fa-plus"></i></button></div>
+								</div>
+							</div>
+							<div class="itm_adjst flexBox">
+								<div class="flexBox">Total Items: <label>5</label></div>
+								<div class="flexBox">Sub Total : <label>840.00</label></div>
+								<div class="flexBox">Discounts: <label>N.A</label></div>
+								<div class="flexBox">Tax Info (18%): <label>151.20</label></div>
+							</div>
+							<div class="total_bill">
+								Total Amount Payable: <label>991.20</label>
+							</div>
+						</div>
+						<div class="bill_butns flexBox">
+							<button class="btn_quiq">Sub Total</button>
+							<button class="btn_quiq btn_blu">Hold</button>
+							<button class="btn_quiq btn_deact">Cancel</button>
+						</div>
+					</div>
+					<div class="item_section">
+						<div class="head_selection_2 flexBox al_it">
+							<div class="search_box_covr">
+								<input type="text" name="" placeholder="Search" class="input_txt">
+								<button><i class="fa fa-search"></i></button>
+							</div>
+							<button class="btn_quiq al_right "><i class="fa fa-gear"></i></button>
+							<button class="btn_quiq mar_left"><i class="fa fa-external-link"></i> Category</button>
+							<input type="text" name="" placeholder="Quantity" class="input_txt small_input mar_left">
+							<button class="btn_quiq mar_left"><i class="fa fa-plus"></i> Add Qty</button>
+						</div>
+						<div class="food_menu flexBox">
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Tandoori Chicken</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Chilli Chicken</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">French Fries</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Paneer Butter Masala</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Fried Rice</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Chicken Soup</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Fried Chicken</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Strawberry Shake</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Butter Chicken</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Pepper Chicken</div>
+								<img src="images/food_sample.png">
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Garlic Chicken</div>
+								<img src="images/food_sample.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bar">
+			
+		</div>
+	</div>
+	<div class="preload_css flexBox al_it js_cnt" id="prelodr">
+		<div class="load_canvas">
+			<div class="loader"></div>
+			<div class="big_circ"></div>
+			<div class="small_circ"></div>
+		</div>
+	</div>
+	
+	
+<script src="js/material.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(window).load(function(){
+	$("#prelodr").hide();
+});
+
+$(document).ready(function(){
+    $("#menuBtn").click(function(){
+        $("#menuBtn").toggleClass('arrw');
+        $("#sidePnl").toggleClass('hide_div');
+        $("#mainPnl").toggleClass('resze_div');
+        $("#sidePnl").toggleClass('tltip');
+    });
+});
+
+</script>
+</body>
+</html>
