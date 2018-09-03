@@ -418,18 +418,7 @@ body{
 	border-radius:3px;
 	position: relative;
 	margin: 0px 10px 10px 0px;
-	background-image: url(../images/food_sample.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	cursor: pointer;
-	transition: all .3s;
-	overflow: hidden;
-}
-.prod_itm > img{
-	height: 100%;
-}
-.prod_itm:hover{
-	box-shadow: 0px 110px 0px rgba(0,0,0,.3) inset;
+
 }
 .prod_itm_name{
 	background-color: rgba(0,0,0,.5);
