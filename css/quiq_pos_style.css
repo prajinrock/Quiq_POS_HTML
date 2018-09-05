@@ -136,7 +136,6 @@ body{
 	font-size: 12px;
 	font-weight: 500;
 	margin-left: 10px;
-	padding: 0px 20px;
 	height: 100%;
 	align-items: center;
 	-webkit-align-items: center;
@@ -375,6 +374,7 @@ body{
 }
 .total_bill > label{
 	color: #e74c3c;
+	margin-left: auto;
 }
 .bill_butns{
 	width: 100%;
@@ -418,6 +418,61 @@ body{
 .wid_3{
 	width: 30%;
 }
+.wid_10{
+	width: 100%;
+}
+.wid_10 .input_txt{
+	width: 100%;
+}
+.customer_tabl_list{
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+.customer_tabl_list .row{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px #f1f4f7 inset;
+	transition: all .3s;
+}
+.customer_tabl_list .row:hover{
+	background-color: #f1f4f7;
+}
+.custm_head{
+	font-size: 15px;
+	font-weight: 500;
+	color: #5d6b78;
+	background-color: #f1f4f7;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+.btn{
+	outline: none;
+}
+.btn-primary{
+	background-color: #637c98;
+	border:none;
+	color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+	background-color: #506a86;
+	outline: none;
+}
+.btn-success{
+	background-color: #16a085;
+	border:none;
+	color: #fff;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active{
+	background-color: #16a085;
+	outline: none;
+}
 .pax_counter{
 	padding-top: 10px;
 }
@@ -454,7 +509,7 @@ body{
 	color: #fff;
 }
 .table_types .nav-tabs>li:nth-child(1)>a{
-	background-color: #ffd700;
+	background-color: #f1c40f;
 }
 .table_types .nav-tabs>li:nth-child(2)>a{
 	background-color: #27ae60;
@@ -468,7 +523,7 @@ body{
 .quiq_tabl{
 	width: 100px;
 	height: 100px;
-	background-color: #ececec;
+	background-color: #fff;
 	border-radius: 3px;
 	background-image: url(../images/table_default.png);
 	background-size: 75%;
@@ -479,12 +534,15 @@ body{
 	-ms-align-items: flex-end;
 	-moz-align-items: flex-end;
 	margin: 5px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	cursor: pointer;
 }
 .tabl_green .tabl_name{
 	background-color: #27ae60;
 }
 .tabl_orange .tabl_name{
-	background-color: #ffd700;
+	background-color: #f1c40f;
 }
 .tabl_red .tabl_name{
 	background-color: #e74c3c;
@@ -766,7 +824,132 @@ input[type="text"], select, button{
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 }
-
+.modal_form{
+	width: 100%;
+}
+.modal_form_box{
+	width: 48%;
+	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	padding-bottom: 10px;
+}
+.js_btwn{
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+}
+.bill_form_box{
+	width: 23%;
+	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	padding-bottom: 10px;
+}
+.modal_form_box > label{
+	width: 30%;
+	font-size: 14px;
+	color: #6d88a7;
+}
+.modal_form_box > input[type="text"], .modal_form_box > select{
+	width: 70%;
+	padding: 5px 10px;
+	background-color: #f1f4f7;
+	border:1px solid #d8dde2;
+	color: #6d88a7;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+.bill_form_box > label{
+	width: 40%;
+	font-size: 14px;
+	color: #6d88a7;
+}
+.bill_form_box > input[type="text"], .bill_form_box > select{
+	width: 60%;
+	padding: 5px 10px;
+	background-color: #f1f4f7;
+	border:1px solid #d8dde2;
+	color: #6d88a7;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+.divide_row{
+	background-color: #d8dde2;
+	height: 1px;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.pos_box{
+	width: 130px;
+	height: 130px;
+	background-color: #333;
+	margin: 10px;
+	border:3px;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all .3s;
+}
+.pos_box:hover{
+	box-shadow: 0px 130px 0px rgba(0,0,0,.1) inset;
+}
+.pos_box:focus{
+	box-shadow: 0px 130px 0px rgba(0,0,0,.1) inset;
+}
+.box_retial{
+	background-color: #ffc000;
+}
+.box_restaurant{
+	background-color: #fc7f0c;
+}
+.box_home{
+	background-color: #e84b3a;
+}
+.pos_box > div{
+	width: 60px;
+	height: 60px;
+}
+.pos_box > div > img{
+	width: 100%;
+}
+.pos_box > label{
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.user_btn > a{
+	padding: 10px 20px;
+	color: #cbddf1;
+}
+.user_btn > a:hover, .user_btn > a:focus{
+	text-decoration: none;
+}
+.user_btn .dropdown-menu{
+	background-color: #364150;
+}
+.dropdown-menu>li>a{
+	color: #6d88a7;
+	transition: all .3s;
+}
+.dropdown-menu>li>a:hover{
+	background-color: #2b3643;
+	color: #6d88a7;
+}
+.tabl_canvas{
+	width: 100%;
+}
+.bill_btn_row{
+	width: 100%;
+	text-align: left;
+}
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){
 	.hide_div{
@@ -872,5 +1055,14 @@ input[type="text"], select, button{
 	}
 	.hide_div .mdl-tooltip{
 		display: none;
+	}
+	.waiter_box{
+		width: 100%;
+	}
+	.itm_qty {
+	    width: 35%;
+	}
+	.qty_line{
+		width: 35%;
 	}
 }
