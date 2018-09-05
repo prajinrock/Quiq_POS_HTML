@@ -100,7 +100,7 @@
 							Split Bill
 						</div>
 					</li>
-					<li><button id="tt12"><img src="images/icon_sample.png">Hold / Unhold</button>
+					<li><button id="tt12"><img src="images/icon_sample.png">Hold / Unhold <span>25</span></button>
 						<div class="mdl-tooltip" data-mdl-for="tt12">
 							Hold / Unhold
 						</div>
@@ -115,7 +115,7 @@
 								<option>Restaurant</option>
 							</select>
 							<label>T5: Walk-in Client</label>
-							<button class="btn_quiq al_right"><i class="fa fa-plus"></i> Add Customer</button>
+							<button class="btn_quiq al_right" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i> Add Customer</button>
 						</div>
 						<div class="table_bill">
 							<div class="bill_title flexBox">
@@ -226,6 +226,7 @@
 			
 		</div>
 	</div>
+	<!--PRELOADER-->
 	<div class="preload_css flexBox al_it js_cnt" id="prelodr">
 		<div class="load_canvas">
 			<div class="loader"></div>
@@ -233,7 +234,170 @@
 			<div class="small_circ"></div>
 		</div>
 	</div>
-	
+	<!--POP UP SAMPLE-->
+	<div class="modal fade quiq_modal" id="myMo dal" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Waiter Selection</h4>
+	        </div>
+	        <div class="modal-body">
+	          <div class="pop_fld_1 js_cnt flexBox al_it">
+	          	<label>POS</label>
+	          	<select class="select_box">
+	          		<option>Restaurant</option>
+	          		<option>Retail</option>
+	          		<option>Home Delivery</option>
+	          	</select>
+	          </div>
+	          <div class="modal_scroll flexBox fl_wrap js_cnt">
+	          	<div class="waiter_box flexBox">
+	          		<div class="waiter_img"></div>
+	          		<div class="waiter_name flexBox al_it">John Smith</div>
+	          	</div>
+	          	<div class="waiter_box flexBox">
+	          		<div class="waiter_img"></div>
+	          		<div class="waiter_name flexBox al_it">Administator</div>
+	          	</div>
+	          	<div class="waiter_box flexBox">
+	          		<div class="waiter_img"></div>
+	          		<div class="waiter_name flexBox al_it">Nix David</div>
+	          	</div>
+	          	<div class="waiter_box flexBox">
+	          		<div class="waiter_img"></div>
+	          		<div class="waiter_name flexBox al_it">Mark White</div>
+	          	</div>
+	          	<div class="waiter_box flexBox">
+	          		<div class="waiter_img"></div>
+	          		<div class="waiter_name flexBox al_it">Cameron Black</div>
+	          	</div>
+	          </div>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="modal fade quiq_modal" id="myModal" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Waiter Selection</h4>
+	        </div>
+	        <div class="modal-body">
+	          <div class="pop_fld_1 js_cnt flexBox al_it">
+	          	<div class="wid_3">
+	          		<label>POS</label>
+		          	<select class="select_txt">
+		          		<option>Restaurant</option>
+		          		<option>Retail</option>
+		          		<option>Home Delivery</option>
+		          	</select>
+	          	</div>
+	          	<div class="wid_3">
+	          		<label>PAX</label>
+	          		<input type="text" name="" class="input_txt">
+	          	</div>
+	          </div>
+	          <div class="pax_counter flexBox js_cnt">
+	          	<button>1</button>
+	          	<button>2</button>
+	          	<button>3</button>
+	          	<button>4</button>
+	          	<button>5</button>
+	          	<button>6</button>
+	          	<button>7</button>
+	          	<button>8</button>
+	          	<button>9</button>
+	          	<button>10</button>
+	          </div>
+	          <div class="table_types">
+				<ul class="nav nav-tabs flexBox js_cnt">
+					<li class="active"><a data-toggle="tab" href="#home">All</a></li>
+					<li><a data-toggle="tab" href="#menu1">Vacant</a></li>
+					<li><a data-toggle="tab" href="#menu2">Occupied</a></li>
+					<li><a data-toggle="tab" href="#menu3">Settlement</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+					  <div class="tabl_container flexBox js_cnt fl_wrap">
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+					  </div>
+					</div>
+					<div id="menu1" class="tab-pane fade">
+					  <div class="tabl_container flexBox js_cnt fl_wrap">
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+					  </div>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+					  <div class="tabl_container flexBox js_cnt fl_wrap">
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name">Table 3</div>
+						</div>
+					  </div>
+					</div>
+					<div id="menu3" class="tab-pane fade">
+					  <div class="tabl_container flexBox js_cnt fl_wrap">
+						<div class="quiq_tabl flexBox tabl_blue">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_blue">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_blue">
+							<div class="tabl_name">Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_blue">
+							<div class="tabl_name">Table 3</div>
+						</div>
+					  </div>
+					</div>
+				</div>
+	          </div>
+	          
+	          
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <!--Modal Ends-->
 	
 <script src="js/material.js"></script>
 <script src="js/jquery.min.js"></script>
