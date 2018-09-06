@@ -950,6 +950,13 @@ input[type="text"], select, button{
 	width: 100%;
 	text-align: left;
 }
+.modal-title > span{
+	font-size: 14px;
+	font-weight: 400;
+	color: #a7bbd2;
+	display: inline-block;
+	padding-left: 10px;
+}
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){
 	.hide_div{

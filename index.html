@@ -59,27 +59,27 @@
 							View Bill
 						</div>
 					</li>
-					<li><button id="tt3"><img src="images/icon_sample.png">Settle</button>
+					<li><button id="tt3" data-toggle="modal" data-target="#myModal_9"><img src="images/icon_sample.png">Settle</button>
 						<div class="mdl-tooltip" data-mdl-for="tt3">
 							Settle
 						</div>
 					</li>
-					<li><button id="tt4"><img src="images/icon_sample.png">Void Kot</button>
+					<li><button id="tt4" data-toggle="modal" data-target="#myModal_10"><img src="images/icon_sample.png">Void Kot</button>
 						<div class="mdl-tooltip" data-mdl-for="tt4">
 							Void Bill
 						</div>
 					</li>
-					<li><button id="tt5"><img src="images/icon_sample.png">Void Bill</button>
+					<li><button id="tt5" data-toggle="modal" data-target="#myModal_12"><img src="images/icon_sample.png">Void Bill</button>
 						<div class="mdl-tooltip" data-mdl-for="tt5">
 							View Bill
 						</div>
 					</li>
-					<li><button id="tt6"><img src="images/icon_sample.png">Pay In</button>
+					<li><button id="tt6" data-toggle="modal" data-target="#myModal_13"><img src="images/icon_sample.png">Pay In</button>
 						<div class="mdl-tooltip" data-mdl-for="tt6">
 							Pay In
 						</div>
 					</li>
-					<li><button id="tt7"><img src="images/icon_sample.png">Pay Out</button>
+					<li><button id="tt7" data-toggle="modal" data-target="#myModal_14"><img src="images/icon_sample.png">Pay Out</button>
 						<div class="mdl-tooltip" data-mdl-for="tt7">
 							Pay Out
 						</div>
@@ -89,7 +89,7 @@
 							Shift Close
 						</div>
 					</li>
-					<li><button id="tt9"><img src="images/icon_sample.png">Change Table</button>
+					<li><button id="tt9" data-toggle="modal" data-target="#myModal_15"><img src="images/icon_sample.png">Change Table</button>
 						<div class="mdl-tooltip" data-mdl-for="tt9">
 							Change Table
 						</div>
@@ -738,6 +738,272 @@
 	          <button type="button" class="btn btn-default">Select Table</button>
 	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
 	          <button type="button" class="btn btn-success">Generate Bill</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="myModal_9" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Settle</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form flexBox fl_wrap js_btwn">
+						<div class="modal_form_box flexBox">
+							<label>POS</label>
+							<select>
+								<option>Restaurant</option>
+								<option>Retail</option>
+								<option>Home Delivery</option>
+							</select>
+						</div>
+						<div class="divide_row"></div>
+					</div>
+					<div class="tabl_canvas flexBox">
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name" >Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_red">
+							<div class="tabl_name">Table 3</div>
+						</div>
+					</div>
+					
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="myModal_10" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Table Selection</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form flexBox fl_wrap js_btwn">
+						<div class="modal_form_box flexBox">
+							<label>POS</label>
+							<select>
+								<option>Restaurant</option>
+								<option>Retail</option>
+								<option>Home Delivery</option>
+							</select>
+						</div>
+						<div class="divide_row"></div>
+					</div>
+					<div class="tabl_canvas flexBox">
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name" >Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_red">
+							<div class="tabl_name">Table 3</div>
+						</div>
+					</div>
+					
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#myModal_11">Submit</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="myModal_11" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Void KoT: Table 4 <span>20-09-2018</span></h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<!-- kendo Table here-->
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Select Table</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Save and Void KoT</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="myModal_12" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Table Selection</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form flexBox fl_wrap js_btwn">
+						<div class="modal_form_box flexBox">
+							<label>POS</label>
+							<select>
+								<option>Restaurant</option>
+								<option>Retail</option>
+								<option>Home Delivery</option>
+							</select>
+						</div>
+						<div class="divide_row"></div>
+					</div>
+					<div class="tabl_canvas flexBox">
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name" >Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_red">
+							<div class="tabl_name">Table 3</div>
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="myModal_13" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Pay In</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form flexBox fl_wrap js_btwn">
+						<div class="modal_form_box flexBox">
+							<label>Amount</label>
+							<input type="text" name="">
+						</div>
+						<div class="modal_form_box flexBox">
+							<label>Description</label>
+							<input type="text" name="">
+						</div>
+						<div class="modal_form_box flexBox">
+							<label>Customer Name</label>
+							<select>
+								<option>Select</option>
+							</select>
+						</div>
+						<div class="modal_form_box flexBox">
+							<label>Item Name</label>
+							<select>
+								<option>Select</option>
+							</select>
+						</div>
+						<div class="modal_form_box flexBox">
+							<label>Comments</label>
+							<input type="text" name="">
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+
+	  <div class="modal fade quiq_modal" id="myModal_14" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Pay Out</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form flexBox fl_wrap js_btwn">
+						<div class="modal_form_box flexBox">
+							<label>Amount</label>
+							<input type="text" name="">
+						</div>
+						<div class="modal_form_box flexBox">
+							<label>Description</label>
+							<input type="text" name="">
+						</div>
+						<div class="modal_form_box flexBox">
+							<label>Customer Name</label>
+							<select>
+								<option>Select</option>
+							</select>
+						</div>
+						<div class="modal_form_box flexBox">
+							<label>Item Name</label>
+							<select>
+								<option>Select</option>
+							</select>
+						</div>
+						<div class="modal_form_box flexBox">
+							<label>Comments</label>
+							<input type="text" name="">
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="myModal_15" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Change Table</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form flexBox fl_wrap js_btwn">
+						<div class="modal_form_box flexBox">
+							<label>POS</label>
+							<select>
+								<option>Restaurant</option>
+								<option>Retail</option>
+								<option>Home Delivery</option>
+							</select>
+						</div>
+						<div class="divide_row"></div>
+					</div>
+					<div class="tabl_canvas flexBox">
+						<div class="quiq_tabl flexBox tabl_green">
+							<div class="tabl_name" >Table 3</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_red">
+							<div class="tabl_name">Table 3</div>
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
 	        </div>
 	      </div>
 	    </div>
