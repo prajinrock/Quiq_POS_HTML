@@ -546,6 +546,42 @@ body{
 	border:1px solid #ccc;
 	cursor: pointer;
 }
+.quiq_bills{
+	width: 100px;
+	height: 100px;
+	background-color: #c0392b;
+	border-radius: 3px;
+	background-image: url(../images/bills.svg);
+	background-size: 35%;
+	background-position: center 10px;
+	background-repeat: no-repeat;
+	align-items: flex-end;
+	-webkit-align-items: flex-end;
+	-ms-align-items: flex-end;
+	-moz-align-items: flex-end;
+	margin: 5px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	cursor: pointer;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	-ms-justify-content: flex-end;
+}
+.quiq_bills .tabl_name{
+	background-color: rgba(0,0,0,.6);
+	font-size: 13px;
+	font-weight: 400;
+}
+.quiq_bills .tabl_name:nth-child(1){
+	background-color: rgba(0,0,0,.4);
+	border-radius: 0px;
+
+}
 .tabl_green .tabl_name{
 	background-color: #27ae60;
 }
@@ -990,6 +1026,10 @@ input[type="text"], select, button{
 }
 .tabl_canvas{
 	width: 100%;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 .bill_btn_row{
 	width: 100%;
