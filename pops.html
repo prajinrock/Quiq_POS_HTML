@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quiq POS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/q_fav.png" type="image/gif" sizes="16x16">
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!--Bootstrap 3.3.7-->
+    <link href="css/material.css" rel="stylesheet"><!--Material UI-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /><!--Font-awesome-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"><!--Google Fonts-->
+    <link rel="stylesheet" type="text/css" href="css/quiq_pos_style.css"><!--quiq Stylesheet-->
+</head>
+<body>
+	<div class="outer_frame flexBox">
+		<div>
+			<button data-toggle="modal" data-target="#CancelBill">Cancel Bill</button>
+			<button data-toggle="modal" data-target="#mergeKot">Merge kot</button>
+			<button data-toggle="modal" data-target="#addModifier">Modifier</button>
+			<button data-toggle="modal" data-target="#rateChange">Rate Change</button>
+			<button data-toggle="modal" data-target="#shiftOpen">Shift Open</button>
+			<button data-toggle="modal" data-target="#checkDiscount">Discount</button>
+		</div>
+		
+	</div>
+	<!--PRELOADER-->
+	<div class="preload_css flexBox al_it js_cnt" id="prelodr">
+		<div class="load_canvas">
+			<div class="loader"></div>
+			<div class="big_circ"></div>
+			<div class="small_circ"></div>
+		</div>
+	</div>
+	<!--POP UP SAMPLE-->
+	<div class="modal fade quiq_modal" id="CancelBill" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Cancel Bill</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form_single flexBox fl_wrap">
+						<div class="single_form_box flexBox al_it">
+							<label>Bill Number</label>
+							<input type="text" name="" placeholder="Username" disabled="" value="#12356">
+						</div>
+						<div class="single_form_box flexBox al_it">
+							<label>Bill Amount</label>
+							<input type="text" name="" placeholder="Password" disabled="" value="2580.00">
+						</div>
+						<div class="single_form_box flexBox al_it">
+							<label>Remarks</label>
+							<textarea></textarea>
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+
+	  <div class="modal fade quiq_modal" id="mergeKot" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Merge Table</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form flexBox fl_wrap js_btwn">
+						<div class="modal_form_box flexBox">
+							<label>POS</label>
+							<select>
+								<option>Restaurant</option>
+								<option>Retail</option>
+								<option>Home Delivery</option>
+							</select>
+						</div>
+						<div class="divide_row"></div>
+					</div>
+					<div class="tabl_canvas flexBox">
+						<div class="quiq_tabl flexBox tabl_red">
+							<div class="tabl_name">
+								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+								  <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+								</label>
+							 	Table 3
+							</div>
+						</div>
+						<div class="quiq_tabl flexBox tabl_red">
+							<div class="tabl_name">
+								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+								  <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+								</label>
+							 	Table 3
+							</div>
+						</div>
+					</div>
+					
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="addModifier" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Select Modifier</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="tabl_canvas flexBox">
+						<div class="quiq_mdfr flexBox">
+							<div class="mdfr_name">
+							 	Salt
+							</div>
+						</div>
+						<div class="quiq_mdfr flexBox">
+							<div class="mdfr_name">
+							 	Pepper
+							</div>
+						</div>
+						<div class="quiq_mdfr flexBox">
+							<div class="mdfr_name">
+							 	Sauce
+							</div>
+						</div>
+					</div>
+				</div>
+	          </div>
+	      </div>
+	    </div>
+	  </div>
+	  
+	  <div class="modal fade quiq_modal" id="rateChange" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog modal-sm">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Custom Rate</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form_single flexBox fl_wrap">
+						<div class="single_form_box flexBox al_it">
+							<label>Item Rate</label>
+							<input type="text" name="" placeholder="30.00">
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="shiftOpen" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Shift Opening</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="discount_row">
+						<div class="disc_field flexBox al_it">
+							<label>Shift Opening Amount</label>
+							<input type="text" name="" placeholder="Amount">
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+
+	  <div class="modal fade quiq_modal" id="checkDiscount" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Discount Details</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt pad_cols">
+					<div class="row wid100 disc_head">
+						<div class="col-sm-1">Sl</div>
+						<div class="col-sm-3">Item</div>
+						<div class="col-sm-2">Product Amount</div>
+						<div class="col-sm-2">Disc %</div>
+						<div class="col-sm-2">Disc Amount</div>
+						<div class="col-sm-2">Line Total</div>
+					</div>
+					<div class="row wid100">
+						<div class="col-sm-1">1</div>
+						<div class="col-sm-3">Chat Masala</div>
+						<div class="col-sm-2">847.00</div>
+						<div class="col-sm-2">0.00</div>
+						<div class="col-sm-2">0.00</div>
+						<div class="col-sm-2">847.00</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!--Modal Ends-->
+	
+<script src="js/material.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(window).load(function(){
+	$("#prelodr").hide();
+});
+
+$(document).ready(function(){
+    $("#menuBtn").click(function(){
+        $("#menuBtn").toggleClass('arrw');
+        $("#sidePnl").toggleClass('hide_div');
+        $("#mainPnl").toggleClass('resze_div');
+        $("#sidePnl").toggleClass('tltip');
+    });
+});
+
+</script>
+</body>
+</html>
