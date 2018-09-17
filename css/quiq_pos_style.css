@@ -241,9 +241,8 @@ body{
 	outline: none;
 	font-size: 13px;
 	font-weight: 400;
-	padding: 4px 7px;
+	padding: 5px 7px;
 	border-radius:3px;
-	border:1px solid #16a085;
 	transition: all .3s;
 }
 .btn_quiq:focus{
@@ -383,6 +382,15 @@ body{
 }
 .bill_butns > button{
 	margin-left: 10px;
+	padding: 6px 12px;
+	border:none;
+}
+.btn_quiq:focus,.btn_quiq:active{
+	box-shadow: 0px 2px 3px rgba(0,0,0,.4) inset;
+}
+.bill_butns > button:focus, .bill_butns > button:active{
+	box-shadow: 0px 2px 3px rgba(0,0,0,.4) inset;
+	border:none;
 }
 .btn_blu{
 	background-color: #637c98;
@@ -1170,6 +1178,22 @@ input[type="text"], select, input[type="password"]{
 }
 .pad_cols .row{
 	padding: 10px 0px;
+}
+.btn_drk{
+	background-color: #364150;
+	border-color: #364150;
+}
+.btn_gry{
+	background-color: #7f8c8d;
+	border-color: #7f8c8d;
+}
+.btn_blue{
+	background-color: #3498db;
+	border-color: #3498db;
+}
+.btn_grn{
+	background-color: #27ae60;
+	border-color: #27ae60;
 }
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){
