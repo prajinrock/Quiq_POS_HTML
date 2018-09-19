@@ -907,6 +907,22 @@ input[type="text"], select, button{
 	-ms-align-items: center;
 	padding-bottom: 10px;
 }
+.note_bill{
+	float: left;
+	align-items: center;
+	height: 100%;
+	padding: 6px 12px 6px 0px;
+	font-weight: 400;
+	color: #6d88a7;
+}
+.note_bill label{
+	padding-right: 20px;
+	font-weight: 500;
+	color: #364150;
+}
+.modal_wide_3{
+	width: 32%;
+}
 .js_btwn{
 	justify-content: space-between;
 	-webkit-justify-content: space-between;

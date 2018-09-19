@@ -1119,7 +1119,7 @@
 
 
 	  <div class="modal fade quiq_modal" id="myModal_18" role="dialog"><!--POP UP-->
-	    <div class="modal-dialog">
+	    <div class="modal-dialog modal-lg">
 	      <div class="modal-content">
 	        <div class="modal-header">
 	          <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -1130,64 +1130,44 @@
 					
 					<div class="pay_types">
 						<ul class="nav nav-tabs flexBox js_cnt">
-							<li class="active"><a data-toggle="tab" href="#payTab1">Cash</a></li>
-							<li><a data-toggle="tab" href="#payTab2">Card</a></li>
-							<li><a data-toggle="tab" href="#payTab3">Online</a></li>
+							<li class="active"><a data-toggle="tab" href="#">Cash</a></li>
+							<li><a data-toggle="tab" href="#">Card</a></li>
+							<li><a data-toggle="tab" href="#">Online</a></li>
 						</ul>
 						<div class="tab-content">
 							<div id="payTab1" class="tab-pane fade in active">
 								<div class="modal_form flexBox fl_wrap js_btwn">
-									<div class="modal_form_box flexBox">
+									<div class="modal_form_box flexBox modal_wide_3">
 										<label>Total Payable</label>
 										<input type="text" name="" placeholder="750.00" disabled="">
 									</div>
-									<div class="modal_form_box flexBox">
+									<div class="modal_form_box flexBox modal_wide_3">
 										<label>Total Paying</label>
 										<input type="text" name="" placeholder="2000.00">
 									</div>
-									<div class="modal_form_box flexBox">
+									<div class="modal_form_box flexBox modal_wide_3">
 										<label>Balance</label>
 										<input type="text" name="" placeholder="1250.00" disabled="">
 									</div>
-									<div class="modal_form_box flexBox">
-										<button class="btn btn-success al_right">Pay</button>
+									<div class="modal_form_box flexBox modal_wide_3">
+										<label>Reference No</label>
+										<input type="text" name="" placeholder="1250.00" disabled="">
 									</div>
-								</div>
-							</div>
-							<div id="payTab2" class="tab-pane fade">
-								<div class="modal_form flexBox fl_wrap js_btwn">
-									<div class="modal_form_box flexBox">
-										<label>Total Payable</label>
-										<input type="text" name="">
+									<div class="modal_form_box flexBox modal_wide_3">
+										<label>Amount</label>
+										<input type="text" name="" placeholder="1250.00">
 									</div>
-									<div class="divide_row"></div>
-									<div class="modal_form_box flexBox">
+									<div class="modal_form_box flexBox modal_wide_3">
 										<label>Select Card</label>
 										<select>
 											<option>Visa</option>
 											<option>Maestro</option>
 										</select>
 									</div>
-									<div class="modal_form_box flexBox">
-										<button class="btn btn-success al_right">Pay</button>
-									</div>
-								</div>
-							</div>
-							<div id="payTab3" class="tab-pane fade">
-								<div class="modal_form flexBox fl_wrap js_btwn">
-									<div class="modal_form_box flexBox">
-										<label>Total Payable</label>
-										<input type="text" name="" placeholder="750.00" disabled="">
-									</div>
 									<div class="divide_row"></div>
-									<div class="modal_form_box flexBox">
-										<label>Select Bank</label>
-										<select>
-											<option>ICICI</option>
-											<option>Federal Bank</option>
-										</select>
-									</div>
-									<div class="modal_form_box flexBox">
+									<div class="modal_form_box flexBox modal_wide_3"></div>
+									<div class="modal_form_box flexBox modal_wide_3"></div>
+									<div class="modal_form_box flexBox modal_wide_3">
 										<button class="btn btn-success al_right">Pay</button>
 									</div>
 								</div>
@@ -1197,6 +1177,12 @@
 				</div>
 	          </div>
 	        <div class="modal-footer">
+	          <div class="note_bill flexBox">
+				Cash: <label>100</label>
+				Card: <label>150</label>
+				Online: <label>200</label>
+	          </div>
+	          
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Select Bill</button>
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 	        </div>
