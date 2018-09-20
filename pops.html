@@ -22,6 +22,7 @@
 			<button data-toggle="modal" data-target="#shiftOpen">Shift Open</button>
 			<button data-toggle="modal" data-target="#checkDiscount">Discount</button>
 			<button data-toggle="modal" data-target="#billSelection">Bill Selection</button>
+			<button data-toggle="modal" data-target="#NC_Pos">NC POS</button>
 		</div>
 		
 	</div>
@@ -311,6 +312,37 @@
 	          </div>
 	        <div class="modal-footer">
 	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="NC_Pos" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Cancel Bill</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="modal_form_single flexBox fl_wrap">
+						<div class="single_form_box flexBox al_it">
+							<label>Note</label>
+							<textarea></textarea>
+						</div>
+						<div class="single_form_box flexBox al_it">
+							<label>Member</label>
+							<select>
+								<option>Admin</option>
+							</select>
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
 	        </div>
 	      </div>
 	    </div>
