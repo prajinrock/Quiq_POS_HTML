@@ -22,6 +22,7 @@
 			<button data-toggle="modal" data-target="#shiftOpen">Shift Open</button>
 			<button data-toggle="modal" data-target="#checkDiscount">Discount</button>
 			<button data-toggle="modal" data-target="#billSelection">Bill Selection</button>
+			<button data-toggle="modal" data-target="#taxDetails">Tax Details</button>
 		</div>
 		
 	</div>
@@ -311,6 +312,55 @@
 	          </div>
 	        <div class="modal-footer">
 	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="modal fade quiq_modal" id="taxDetails" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Tax Details</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="discoutTable">
+						<div class="row wid100 tablHead">
+							<div class="col-sm-1">Sl</div>
+							<div class="col-sm-2">Item</div>
+							<div class="col-sm-2">Product Amount</div>
+							<div class="col-sm-1">Tax %</div>
+							<div class="col-sm-2">Tax Break Up</div>
+							<div class="col-sm-2">Tax Amount</div>
+							<div class="col-sm-2">Line Total</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-1">1</div>
+							<div class="col-sm-2">Tandoori Chicken</div>
+							<div class="col-sm-2">200.00</div>
+							<div class="col-sm-1">9.00</div>
+							<div class="col-sm-1">4.5</div>
+							<div class="col-sm-1">4</div>
+							<div class="col-sm-2">36</div>
+							<div class="col-sm-2">236</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-1">1</div>
+							<div class="col-sm-2">Tandoori Chicken</div>
+							<div class="col-sm-2">200.00</div>
+							<div class="col-sm-1">9.00</div>
+							<div class="col-sm-1">4.5</div>
+							<div class="col-sm-1">4</div>
+							<div class="col-sm-2">36</div>
+							<div class="col-sm-2">236</div>
+						</div>
+					</div>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 	        </div>
 	      </div>
 	    </div>

@@ -660,6 +660,17 @@ body{
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 }
+.modifier_menu{
+	width: 100%;
+	height: auto;
+	background-color:#f1f4f7;
+	padding: 10px 10px 10px 10px;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+}
 .prod_itm{
 	width: 110px;
 	height: 100px;
@@ -1250,6 +1261,95 @@ input[type="text"], select, input[type="password"]{
 .btn_grn{
 	background-color: #27ae60;
 	border-color: #27ae60;
+}
+.discoutTable{
+	width: 100%;
+}
+.discoutTable .row{
+	border-bottom: 1px solid #f1f4f7;
+}
+.discoutTable .row div{
+	padding: 10px;
+	text-align: center;
+}
+.discoutTable .tablHead{
+	background-color: #f1f4f7;
+	padding: 10px 0px;
+	font-weight: 600;
+}
+.modifyTable{
+	width: 100%;
+	margin-top: 10px;
+	overflow-x: auto;
+}
+.modifyTable .row{
+	border-bottom: 1px solid #d8dde2;
+	min-width: 800px;
+}
+.modifyTable .row:hover{
+	background-color: #fff;
+}
+.modifyTable .row div{
+	padding: 10px;
+	text-align: center;
+	font-size: 13px;
+}
+.modifyTable .tablHead{
+	background-color: #d8dde2;
+	font-weight: 600;
+}
+.deleteBtn{
+	background-color: #e74c3c;
+	color: #fff;
+	border:none;
+	/*padding: 1px 4px;*/
+	border-radius: 3px;
+	margin-right: 5px;
+}
+.qty_small{
+	padding: 2px 5px !important;
+	width: 50px;
+	text-align: center;
+}
+.filtr_box{
+	background-color: #fff;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -12px;
+	padding: 10px 20px;
+	z-index: 99;
+	border: 1px solid #f1f4f7;
+	box-shadow: 0px 0px 4px rgba(0,0,0,.12);
+	border-radius:5px;
+	max-width: 280px;
+	transition: all .3s;
+}
+.filtr_box ul{
+	list-style: none;
+	text-align: left;
+	margin:0px;
+	padding: 0px;
+
+}
+.filtr_box ul li{
+	padding: 5px 0px;
+	color: #637c98;
+	font-size: 13px;
+	cursor: default;
+	vertical-align: top;
+	display: flex;
+	align-items: center;
+}
+.filtr_box ul li input[type="checkbox"]{
+	margin-right: 5px;
+	margin-top: 0px;
+	display: inline-block;
+	cursor: pointer;
+	zoom:1.5;
+}
+.filtr_box span{
+	display: inline-block;
+	padding-top: 0px;
 }
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){
