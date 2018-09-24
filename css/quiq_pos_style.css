@@ -934,6 +934,9 @@ input[type="text"], select, button{
 .modal_wide_3{
 	width: 32%;
 }
+.modal_wide_5{
+	width: 48%;
+}
 .js_btwn{
 	justify-content: space-between;
 	-webkit-justify-content: space-between;
@@ -1313,15 +1316,8 @@ input[type="text"], select, input[type="password"]{
 }
 .filtr_box{
 	background-color: #fff;
-	position: absolute;
-	margin-top: 10px;
-	margin-left: -12px;
 	padding: 10px 20px;
 	z-index: 99;
-	border: 1px solid #f1f4f7;
-	box-shadow: 0px 0px 4px rgba(0,0,0,.12);
-	border-radius:5px;
-	max-width: 280px;
 	transition: all .3s;
 }
 .filtr_box ul{
@@ -1332,9 +1328,9 @@ input[type="text"], select, input[type="password"]{
 
 }
 .filtr_box ul li{
-	padding: 5px 0px;
+	padding: 7px 0px;
 	color: #637c98;
-	font-size: 13px;
+	font-size: 14px;
 	cursor: default;
 	vertical-align: top;
 	display: flex;
@@ -1350,6 +1346,97 @@ input[type="text"], select, input[type="password"]{
 .filtr_box span{
 	display: inline-block;
 	padding-top: 0px;
+}
+.btn_settle{
+	width: 160px;
+	border: none;
+	background-color: #637c98;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 5px;
+	padding: 8px 0px;
+	font-weight: 400;
+}
+.spacer10{
+	width: 100%;
+	height: 10px;
+}
+.settle_sub{
+	width: 160px;
+	box-sizing: border-box;
+	border: 1px solid #364150;
+	border-radius:0px 0px 5px 5px;
+	padding: 5px 5px 0px 5px;
+	display: none;
+	transition: all .5s;
+	animation:settleAnim 1s;
+	margin:0px auto;
+}
+@keyframes settleAnim{
+	0%{ opacity:0; border-color: #fff;}
+	100%{opacity:1; border-color: #364150;}
+}
+.settle_select{
+	border-radius:5px 5px 0px 0px;
+	background-color:#364150; 
+}
+.pay_type_btn{
+	width: 100%;
+	border: none;
+	background-color: #16a085;
+	color: #fff;
+	font-size: 13px;
+	border-radius: 5px;
+	padding: 6px 0px;
+	font-weight: 400;
+	margin-bottom: 5px;
+	transition: all .5s;
+}
+.card_section{
+	background-color: #f1f4f7;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.15) inset;
+}
+.item_marker{
+	position: absolute;
+	font-size: 26px;
+	color: #fff;
+	background-color: rgba(0,0,0,.5);
+	width: 110px;
+	height: 100px;
+	text-align: center;
+	vertical-align: middle;
+	display: none;
+}
+.itemSelect{
+	background-color: #16a085;
+	z-index: 5;	
+}
+.greenBord{
+	border-color: #16a085;
+	background-color: #16a085;
+}
+.item_marker i{
+	margin-top: 25px;
+}
+.itm_adjst > div > a{
+	color: #637c98;
+	text-decoration: underline;
+}
+.modifier_notes{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	background-color: #e74c3c;
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+}
+.whitBG{
+	background-color:#fff;
 }
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){

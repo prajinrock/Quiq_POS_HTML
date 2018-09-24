@@ -9,7 +9,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"><!--Bootstrap 3.3.7-->
     <link href="css/material.css" rel="stylesheet"><!--Material UI-->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /><!--Font-awesome-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"><!--Google Fonts-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"><!--Google Fonts-->
+    <link rel="stylesheet" href="font-awesome/css/Roboto/font_stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="css/quiq_pos_style.css"><!--quiq Stylesheet-->
 </head>
 <body>
@@ -158,10 +159,10 @@
 								</div>
 							</div>
 							<div class="itm_adjst flexBox">
-								<div class="flexBox">Total Items: <label>5</label></div>
-								<div class="flexBox">Sub Total : <label>840.00</label></div>
-								<div class="flexBox">Discounts: <label>N.A</label></div>
-								<div class="flexBox">Tax Info (18%): <label>151.20</label></div>
+								<div class="flexBox">Total Items:<label>5</label></div>
+								<div class="flexBox"><a href="#">Sub Total :</a> <label>840.00</label></div>
+								<div class="flexBox"><a href="#">Discounts: </a><label>N.A</label></div>
+								<div class="flexBox"><a href="#">Tax Info (18%):</a> <label>151.20</label></div>
 							</div>
 							<div>
 								<button data-toggle="modal" data-target="#myModal_16">User Permission</button>
@@ -193,15 +194,7 @@
 								<input type="text" name="" placeholder="Search" class="input_txt">
 								<button><i class="fa fa-search"></i></button>
 							</div>
-							<button class="btn_quiq al_right"><i class="fa fa-gear"></i>
-								<span class="filtr_box"> <!--hide and show this div-->
-									<ul>
-										<li><input type="checkbox" name=""> <span>Item 1</span></li>
-										<li><input type="checkbox" name=""> Item 1</li>
-										<li><input type="checkbox" name=""> Item 1 hjdf</li>
-									</ul>
-								</span>
-							</button>
+							<button class="btn_quiq al_right" data-toggle="modal" data-target="#myModal_25"><i class="fa fa-gear"></i></button>
 							<button class="btn_quiq mar_left" data-toggle="modal" data-target="#myModal_1"><i class="fa fa-external-link"></i> Category</button>
 							<input type="text" name="" placeholder="Quantity" class="input_txt small_input mar_left">
 							<button class="btn_quiq mar_left"><i class="fa fa-plus"></i> Add Qty</button>
@@ -219,39 +212,70 @@
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Tandoori Chicken</div>
 								<img src="images/food.jpg">
-								<span style="position: absolute;font-size: 26px; left: 40px; top:30px; color: #fff;">
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
+								<div class="modifier_notes">modifier notes</div>
+							</div>
+							<div class="prod_itm flexBox al_it js_cnt">
+								<div class="prod_itm_name">Chilli Chicken</div>
+								<span class="item_marker">
 									<i class="fa fa-check"></i>
 								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
-								<div class="prod_itm_name">Chilli Chicken</div>
-							</div>
-							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">French Fries</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Paneer Butter Masala</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Fried Rice</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Chicken Soup</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Fried Chicken</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Strawberry Shake</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Butter Chicken</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Pepper Chicken</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 							<div class="prod_itm flexBox al_it js_cnt">
 								<div class="prod_itm_name">Garlic Chicken</div>
+								<span class="item_marker">
+									<i class="fa fa-check"></i>
+								</span>
 							</div>
 						</div>
 						<div class="modifier_menu flexBox">
@@ -1417,6 +1441,39 @@
 	      </div>
 	    </div>
 	  </div>
+	  <div class="modal fade quiq_modal" id="myModal_25" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog modal-sm">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Filter</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<span class="filtr_box"> <!--hide and show this div-->
+						<ul>
+							<li><input type="checkbox" name=""> <span>Item 1</span></li>
+							<li><input type="checkbox" name=""> Item 1</li>
+							<li><input type="checkbox" name=""> Item 1 hjdf</li>
+							<li><input type="checkbox" name=""> <span>Item 1</span></li>
+							<li><input type="checkbox" name=""> Item 1</li>
+							<li><input type="checkbox" name=""> Item 1 hjdf</li>
+							<li><input type="checkbox" name=""> <span>Item 1</span></li>
+							<li><input type="checkbox" name=""> Item 1</li>
+							<li><input type="checkbox" name=""> Item 1 hjdf</li>
+							<li><input type="checkbox" name=""> <span>Item 1</span></li>
+							<li><input type="checkbox" name=""> Item 1</li>
+							<li><input type="checkbox" name=""> Item 1 hjdf sadad asd adas adsa dasd ad asd ad as ad</li>
+						</ul>
+					</span>
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Apply</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
 
 	  <!--Modal Ends-->
 	
@@ -1434,6 +1491,16 @@ $(document).ready(function(){
         $("#sidePnl").toggleClass('hide_div');
         $("#mainPnl").toggleClass('resze_div');
         $("#sidePnl").toggleClass('tltip');
+    });
+    $(".prod_itm").click(function(){
+        $(this).find(".item_marker").toggle();
+        $(this).find(".prod_itm_name").toggleClass('itemSelect');
+        $(this).toggleClass('greenBord');
+    });
+    $(".modifyTable div").click(function(){
+        $(".modifyTable div").removeClass('whitBG');
+        $(this).toggleClass('whitBG');
+
     });
 });
 
