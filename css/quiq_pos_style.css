@@ -293,6 +293,9 @@ body{
 	font-weight: 500;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	box-sizing: border-box;
+	transition: all .3s;
+	border: 1px solid rgba(0,0,0,0);
 }
 .bill_item_list > div:nth-child(odd) {
 	background-color: #fff;
@@ -302,6 +305,10 @@ body{
 }
 .itm_nme{
 	padding-left: 10px;
+	max-width: 60%;
+	color: #47627f;
+	font-size: 13px;
+	font-weight: normal;
 }
 .itm_price{
 	width: 15%;
@@ -421,7 +428,7 @@ body{
 	box-shadow: 0px 1px 1px rgba(0,0,0,.1) inset;
 }
 .small_input{
-	width: 70px;
+	width: 50px;
 }
 .wid_3{
 	width: 30%;
@@ -545,6 +552,27 @@ body{
 	box-sizing: border-box;
 	border:1px solid #ccc;
 	cursor: pointer;
+	position: relative;
+}
+.quiq_tabl_2{
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border-radius: 3px;
+	background-size: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: flex-end;
+	-webkit-align-items: flex-end;
+	-ms-align-items: flex-end;
+	-moz-align-items: flex-end;
+	margin: 5px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	cursor: pointer;
+	position: relative;
+	align-items: center;
+	justify-content: center;
 }
 .quiq_bills{
 	width: 100px;
@@ -577,6 +605,9 @@ body{
 	font-size: 13px;
 	font-weight: 400;
 }
+.quiq_tabl_2 > img{
+	width: 75%;
+}
 .quiq_bills .tabl_name:nth-child(1){
 	background-color: rgba(0,0,0,.4);
 	border-radius: 0px;
@@ -602,6 +633,8 @@ body{
 	font-weight: 500;
 	border-radius:0px 0px 3px 3px;
 	transition: all .3s;
+	position: absolute;
+	bottom: 0px;
 }
 .quiq_mdfr{
 	width: 100px;
@@ -640,14 +673,28 @@ body{
 }
 .search_box_covr{
 	position: relative;
+	width: 140px;
 }
 .search_box_covr > button{
 	position: absolute;
-	right: 4px;
-	top: 4px;
-	color: #6d88a7;
+	right: 1px;
+	top: 1px;
+	color: #fff;
 	background-color: transparent;
 	border:none;
+	background-color: #16a085;
+	padding: 5px 5px;
+	border-radius:0px 3px 3px 0px;
+}
+.remark_box_covr{
+	position: relative;
+	min-width: 200px;
+}
+.remark_box_covr > button{
+	margin-left: 10px;
+}
+.remark_box_covr input[type="text"]{
+	width: 120px;
 }
 .food_menu{
 	width: 100%;
@@ -1228,6 +1275,9 @@ input[type="text"], select, input[type="password"]{
 .tabl_name .mdl-checkbox{
 	width: auto;
 }
+.tabl_name .mdl-checkbox.is-upgraded{
+	padding-left: 14px;
+}
 .tabl_name .mdl-checkbox__box-outline{
 	border-color: #fff;
 }
@@ -1437,6 +1487,21 @@ input[type="text"], select, input[type="password"]{
 }
 .whitBG{
 	background-color:#fff;
+}
+.remarkNote{
+	display: block;
+	margin-left: 30px;
+	font-weight: normal;
+	color: #637c98;
+	font-size: 12px;
+	font-style: italic;
+	line-height: 1.2;
+	padding: 5px 0px;
+}
+.editSel{
+	position: relative;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.4);
+	border: 1px solid  rgba(26,188,156,1);
 }
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){
