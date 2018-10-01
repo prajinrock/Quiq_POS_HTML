@@ -625,6 +625,13 @@ body{
 .tabl_blue .tabl_name{
 	background-color: #3498db;
 }
+.tabl_gr_grn .tabl_name{
+	background-color: #16a085;
+}
+.tabl_gr_grn .tabl_name .mdl-checkbox{
+	padding-right: 5px;
+}
+
 .tabl_name{
 	width: 100%;
 	text-align: center;
@@ -1576,6 +1583,11 @@ input[type="text"], select, input[type="password"]{
 .itmName{
 	padding-right: 20px;
 	font-size: 14px;
+}
+.itmRate{
+	padding-right: 20px;
+	font-size: 14px;
+	padding-left: 30px;
 }
 .item_counter{
 	width: 70px;
