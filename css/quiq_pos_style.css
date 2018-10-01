@@ -718,6 +718,37 @@ body{
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 }
+.prod_category{
+	width: 110px;
+	height: 100px;
+	position: relative;
+	margin: 0px 10px 10px 0px;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: all .3s;
+	overflow: hidden;
+	background-image: url(../images/category_folder.svg);
+}
+.prod_category > img{
+	height: 100%;
+}
+.prod_category_name{
+	background-color: rgba(20,130,108,.8);
+	position: absolute;
+	bottom: 0px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #fff;
+	width: 100%;
+	padding: 5px 2px;
+	text-align: center;
+	border-radius: 3px;
+	transition: all .3s;
+}
+.prod_category:hover .prod_category_name{
+	background-color: rgba(15,98,82,1);
+}
 .prod_itm{
 	width: 110px;
 	height: 100px;
@@ -1490,7 +1521,7 @@ input[type="text"], select, input[type="password"]{
 }
 .remarkNote{
 	display: block;
-	margin-left: 30px;
+	margin-left: 10px;
 	font-weight: normal;
 	color: #637c98;
 	font-size: 12px;
@@ -1498,10 +1529,160 @@ input[type="text"], select, input[type="password"]{
 	line-height: 1.2;
 	padding: 5px 0px;
 }
+.remarkNote > i{
+	font-size: 16px;
+	color: #637c98;
+	margin-right: 5px;
+}
+.row_head{
+	background-color: #637c98 !important;
+	font-size: 14px;
+	text-align: center;
+	padding: 5px 0px;
+	color: #fff;
+}
+.bill_btn{
+	background-color: #16a085;
+	border:none;
+	color: #fff;
+	border-radius:3px;
+}
+.bill_item_count{
+	background-color: transparent;
+	width: 100%;
+	padding: 2px 5px !important;
+	text-align: center;
+}
+.count_input{
+	width: 50px;
+	margin: 0px 2px;
+
+}
+.bill_item_list .row{
+	padding: 5px 0px;
+	border:1px solid rgba(0,0,0,0);
+}
+.bill_delete{
+	background-color: #e74c3c;
+	border:none;
+	border-radius: 3px;
+	color: #fff;
+}
 .editSel{
 	position: relative;
 	box-shadow: 0px 0px 7px rgba(0,0,0,.4);
-	border: 1px solid  rgba(26,188,156,1);
+	border: 1px solid  rgba(26,188,156,1) !important;
+}
+.itmName{
+	padding-right: 20px;
+	font-size: 14px;
+}
+.item_counter{
+	width: 70px;
+	display: inline-block;
+}
+.item_counter > input[type="text"]{
+	padding: 4px 5px;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+.item_sel_row > .bill_btn{
+	padding: 5px 10px;
+}
+.item_sel_row{
+	margin-bottom: 5px;
+}
+.addon_row{
+	width: 100%;
+}
+.addon_row > div:nth-child(1){
+	text-align: center;
+}
+.addon_table{
+	border:1px solid rgba(0,0,0,.12);
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.addon_row.title_head{
+	padding: 5px 0px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,.12);
+}
+.addon_table .row{
+	padding: 5px 0px;
+}
+.addon_table .row:nth-child(odd){
+	background-color: #ebf1f6;
+}
+.title_addon{
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #16a085;
+	text-align: center;
+	padding: 10px 0px;
+}
+.RemarkAdd{
+	width: 100%;
+	height: 80px;
+	background-color: #f1f4f7;
+    border: 1px solid #d8dde2;
+    color: #6d88a7;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.modifrNote{
+	display: block;
+	margin-left: 10px;
+	font-weight: normal;
+	color: #637c98;
+	font-size: 12px;
+	font-style: italic;
+	line-height: 1.2;
+	padding: 5px 0px;
+}
+.modifrNote > i{
+	font-size: 16px;
+	color: #16a085;
+	margin-right: 5px;
+}
+.addonNote{
+	display: block;
+	margin-left: 10px;
+	font-weight: normal;
+	color: #637c98;
+	font-size: 12px;
+	font-style: italic;
+	line-height: 1.2;
+	padding: 5px 0px;
+}
+.addonNote > i{
+	font-size: 16px;
+	color: #3498db;
+	margin-right: 5px;
+}
+.search_box2_covr{
+	position: relative;
+	width: 50%;
+}
+.search_box2_covr > input[type="text"]{
+	width: 100%;
+}
+.search_box2_covr > button{
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	color: #fff;
+	background-color: transparent;
+	border:none;
+	background-color: #16a085;
+	padding: 5px 20px;
+	border-radius:0px 3px 3px 0px;
 }
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){
