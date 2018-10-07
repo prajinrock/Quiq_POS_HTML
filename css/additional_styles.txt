@@ -1,0 +1,16 @@
+
+/*Add below lines after ".search_box2_covr > button" this class*/
+
+
+.prod_itm_name .mdl-checkbox{
+	width: auto;
+}
+.prod_itm_name .mdl-checkbox__box-outline{
+	border-color: #fff;
+}
+.prod_itm_name .mdl-checkbox.is-checked .mdl-checkbox__box-outline{
+	border-color: #fff;
+}
+.prod_itm_name .mdl-checkbox.is-checked .mdl-checkbox__tick-outline{
+	background:#fff;
+}

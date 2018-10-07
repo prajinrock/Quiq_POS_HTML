@@ -1696,6 +1696,18 @@ input[type="text"], select, input[type="password"]{
 	padding: 5px 20px;
 	border-radius:0px 3px 3px 0px;
 }
+.prod_itm_name .mdl-checkbox{
+	width: auto;
+}
+.prod_itm_name .mdl-checkbox__box-outline{
+	border-color: #fff;
+}
+.prod_itm_name .mdl-checkbox.is-checked .mdl-checkbox__box-outline{
+	border-color: #fff;
+}
+.prod_itm_name .mdl-checkbox.is-checked .mdl-checkbox__tick-outline{
+	background:#fff;
+}
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){
 	.hide_div{
