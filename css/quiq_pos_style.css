@@ -40,11 +40,13 @@ body{
 .top_bar{
 	height: 40px;
 	width: 100%;
-	background-color: #2b3643;
+	background: #6cacff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #41d8dd, #5583ee); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #41d8dd, #5583ee);
 }
 .footer_bar{
 	width: 100%;
-	background-color: #2b3643;
+	background-color: #5691c8;
 	height: 26px;
 }
 .middle_section_q{
@@ -55,7 +57,9 @@ body{
 .side_panel{
 	width: 14%;
 	height: 100%;
-	background-color: #364150;
+	background: #6cacff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #457fca, #5691c8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #457fca, #5691c8);
 	transition: all .3s;
 	animation: menuAnim .7s;
 }
@@ -95,18 +99,22 @@ body{
 }
 .info_crumbs{
 	font-size: 12px;
-	color: #6d88a7;
-	font-weight: 500;
-	padding-right: 20px;
+    color: rgba(255,255,255,.6);
+    font-weight: 500;
+    margin-right: 20px;
+    background: rgba(0,0,0,.2);
+    padding: 0px 5px;
+    border-radius: 3px;
 }
 .info_crumbs > label{
-	color: #cbddf1;
+	color: rgba(255,255,255,.8);
+	font-weight: bold;
 }
 .top_bar_date{
 	height: 100%;
-	background-color: #222c38;
+	background-color: rgba(0,0,0,.1);
 	font-size: 12px;
-	color: #6d88a7;
+	color: #fff;
 	padding:0px 10px;
 	align-items: center;
 	-webkit-align-items: center;
@@ -147,12 +155,10 @@ body{
 .user_btn label{
 	cursor: pointer;
 }
-.user_btn:hover{
-	background-color: #222c38;
-}
+
 .user_btn i{
 	font-size: 14px;
-	color: #1abc9c;
+	color: #fff;
 	padding-left: 5px;
 }
 .side_panel ul{
@@ -166,7 +172,7 @@ body{
 	background-color: transparent;
 	border:none;
 	font-size: 13px;
-	color: #6d88a7;
+	color: rgba(255,255,255,.7);
 	display: flex;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -175,17 +181,23 @@ body{
 	font-weight: 500;
 	padding-left: 20px;
 	outline: none;
-	border-bottom: 1px solid #2b3643;
+	border-bottom: 1px solid rgba(0,0,0,.1);
 	padding-bottom: 10px;
 	padding-top: 10px;
 	box-shadow:0px 0px 0px rgba(0,0,0,.2) inset;
 	transition: all .5s;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+	text-transform: uppercase;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
 }
 .side_panel ul li button img{
 	padding-right: 5px;
 }
 .side_panel ul li button span{
-	background-color: #16a085;
+	background-color: #4b6cb7;
 	color: #fff;
 	padding-left:3px;
 	padding-right:3px; 
@@ -235,15 +247,17 @@ body{
 	margin-left: auto;
 }
 .btn_quiq{
-	background-color: #16a085;
 	color: #fff;
 	border:none;
 	outline: none;
 	font-size: 13px;
 	font-weight: 400;
 	padding: 5px 7px;
-	border-radius:3px;
+	border-radius:2px;
 	transition: all .3s;
+	box-shadow:0px 2px 2px rgba(0,0,0,.2);
+    background: #5583ee;
+    
 }
 .btn_quiq:focus{
 	
@@ -365,7 +379,7 @@ body{
 	-moz-justify-content: space-between;
 }
 .itm_adjst > div > label{
-	color: #16a085;
+	color: #3498db;
 	font-weight: 600;
 	display: inline-block;
 	width: 50%;
@@ -790,15 +804,24 @@ body{
 }
 .menu_pin{
 	width: 12px;
-	padding: 0px;
-	border:none;
-	background-color: transparent;
+    border: none;
+    background-color: transparent;
+    padding: 10px 12px;
+    box-sizing: content-box;
+    height: 12px;
+    border-radius: 3px;
+}
+.menu_pin:hover{
+	background-color: rgba(0,0,0,.1);
+}
+.menu_pin:focus{
+	box-shadow: 0px 0px 3px rgba(0,0,0,.3) inset;
 }
 .menu_pin > span{
 	display: block;
 	width: 12px;
 	height: 2px;
-	background-color: #4f6278;
+	background-color: #fff;
 	margin-bottom: 2px;
 	position: relative;
 	transition: all .5s;
@@ -933,8 +956,8 @@ input[type="text"], select, button{
 	transition: all .3s;
 }
 .main_frame_q input[type="text"]:focus, .main_frame_q select:focus, .select_box:focus{
-	border-color: #16a085;
-	box-shadow: 0px 0px 5px #3ebaa2;
+	border-color: #5583ee;
+	box-shadow: 0px 0px 5px #5583ee;
 }
 .pop_fld_1 .select_box{
 	font-size: 15px;
@@ -1124,20 +1147,30 @@ input[type="text"], select, button{
 .user_btn > a{
 	padding: 10px 20px;
 	color: #cbddf1;
+	transition: all .3s;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
 }
 .user_btn > a:hover, .user_btn > a:focus{
 	text-decoration: none;
+	background-color: rgba(0,0,0,.2);
+}
+.dropdown-menu{
+	border-radius: 0px;
 }
 .user_btn .dropdown-menu{
-	background-color: #364150;
+	background-image: linear-gradient(to right, #67B26F, #4ca2cd);
 }
 .dropdown-menu>li>a{
-	color: #6d88a7;
+	color: #fff;
 	transition: all .3s;
+	font-size: 13px;
+	font-weight: 400;
 }
 .dropdown-menu>li>a:hover{
-	background-color: #2b3643;
-	color: #6d88a7;
+	background-color: rgba(0,0,0,.2);
+	color: #fff;
 }
 .tabl_canvas{
 	width: 100%;
@@ -1301,11 +1334,11 @@ input[type="text"], select, input[type="password"]{
 	font-weight: 500;
 }
 .sub_cat_btn i{
-	color: #16a085;
+	color: #5583ee;
 }
 .sub_cat_btn:hover{
-	border:1px solid #16a085;
-	box-shadow: 0px 0px 3px #16a085;
+	border:1px solid #5583ee;
+	box-shadow: 0px 0px 3px #5583ee;
 }
 .sub_cat_btn:focus{
 	box-shadow: 0px 2px 3px rgba(0,0,0,.3) inset;
@@ -1542,14 +1575,16 @@ input[type="text"], select, input[type="password"]{
 	margin-right: 5px;
 }
 .row_head{
-	background-color: #637c98 !important;
+	background: #6cacff;
+    background: -webkit-linear-gradient(to right, #41d8dd, #5583ee);
+    background: linear-gradient(to right, #41d8dd, #5583ee);
 	font-size: 14px;
 	text-align: center;
 	padding: 5px 0px;
 	color: #fff;
 }
 .bill_btn{
-	background-color: #16a085;
+	background-color: #5583ee;
 	border:none;
 	color: #fff;
 	border-radius:3px;
@@ -1578,7 +1613,7 @@ input[type="text"], select, input[type="password"]{
 .editSel{
 	position: relative;
 	box-shadow: 0px 0px 7px rgba(0,0,0,.4);
-	border: 1px solid  rgba(26,188,156,1) !important;
+	border: 1px solid #5583ee !important;
 }
 .itmName{
 	padding-right: 20px;
@@ -1692,7 +1727,7 @@ input[type="text"], select, input[type="password"]{
 	color: #fff;
 	background-color: transparent;
 	border:none;
-	background-color: #16a085;
+	background-color: #5583ee;
 	padding: 5px 20px;
 	border-radius:0px 3px 3px 0px;
 }
@@ -1707,6 +1742,11 @@ input[type="text"], select, input[type="password"]{
 }
 .prod_itm_name .mdl-checkbox.is-checked .mdl-checkbox__tick-outline{
 	background:#fff;
+}
+.side_panel ul li button > i{
+	font-size: 16px;
+	color: #fff;
+	padding-right: 10px;
 }
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){
