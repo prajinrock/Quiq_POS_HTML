@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?rzhyr6');
+  src:  url('fonts/icomoon.eot?rzhyr6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rzhyr6') format('truetype'),
+    url('fonts/icomoon.woff?rzhyr6') format('woff'),
+    url('fonts/icomoon.svg?rzhyr6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qq_change_pin:before {
+  content: "\e900";
+}
+.icon-qq_change_table:before {
+  content: "\e901";
+}
+.icon-qq_hold_unhold:before {
+  content: "\e902";
+}
+.icon-qq_merge_kot:before {
+  content: "\e903";
+}
+.icon-qq_pay_in:before {
+  content: "\e904";
+}
+.icon-qq_pay_out:before {
+  content: "\e905";
+}
+.icon-qq_shift_close:before {
+  content: "\e906";
+}
+.icon-qq_split_bill:before {
+  content: "\e907";
+}
+.icon-qq_view_bill:before {
+  content: "\e908";
+}
+.icon-qq_void_bill:before {
+  content: "\e909";
+}
+.icon-qq_void_kot:before {
+  content: "\e90a";
+}

@@ -9,8 +9,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"><!--Bootstrap 3.3.7-->
     <link href="css/material.css" rel="stylesheet"><!--Material UI-->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /><!--Font-awesome-->
+    <link rel="stylesheet" href="css/POS_Icons/style.css" />
     <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"><!--Google Fonts-->
-    <link rel="stylesheet" href="font-awesome/css/Roboto/Roboto_Font.css" />
+    <link rel="stylesheet" href="css/Roboto/Roboto_Font.css" />
     <link rel="stylesheet" type="text/css" href="css/quiq_pos_style.css"><!--quiq Stylesheet-->
 </head>
 <body>
@@ -50,12 +51,12 @@
 		<div class="middle_section_q flexBox">
 			<div class="side_panel mobHid tltip" id="sidePnl">
 				<ul>
-					<li><button id="tt1" data-toggle="modal" data-target="#myModal_6"><i class="fa fa-gear" aria-hidden="true"></i>Merge Kot</button>
+					<li><button id="tt1" data-toggle="modal" data-target="#myModal_6"><i class="icon-qq_merge_kot" aria-hidden="true"></i>Merge Kot</button>
 						<div class="mdl-tooltip" data-mdl-for="tt1">
 							Merge Kot
 						</div>
 					</li>
-					<li><button id="tt2" data-toggle="modal" data-target="#myModal_7"><i class="fa fa-gear" aria-hidden="true"></i>View Bill</button>
+					<li><button id="tt2" data-toggle="modal" data-target="#myModal_7"><i class="icon-qq_view_bill" aria-hidden="true"></i>View Bill</button>
 						<div class="mdl-tooltip" data-mdl-for="tt2">
 							View Bill
 						</div>
@@ -65,47 +66,47 @@
 							Settle
 						</div>
 					</li>
-					<li><button id="tt4" data-toggle="modal" data-target="#myModal_10"><i class="fa fa-gear" aria-hidden="true"></i>Void Kot</button>
+					<li><button id="tt4" data-toggle="modal" data-target="#myModal_10"><i class="icon-qq_void_kot" aria-hidden="true"></i>Void Kot</button>
 						<div class="mdl-tooltip" data-mdl-for="tt4">
-							Void Bill
+							Void KoT
 						</div>
 					</li>
-					<li><button id="tt5" data-toggle="modal" data-target="#myModal_12"><i class="fa fa-gear" aria-hidden="true"></i>Void Bill</button>
+					<li><button id="tt5" data-toggle="modal" data-target="#myModal_12"><i class="icon-qq_void_bill" aria-hidden="true"></i>Void Bill</button>
 						<div class="mdl-tooltip" data-mdl-for="tt5">
 							View Bill
 						</div>
 					</li>
-					<li><button id="tt6" data-toggle="modal" data-target="#myModal_13"><i class="fa fa-gear" aria-hidden="true"></i>Pay In</button>
+					<li><button id="tt6" data-toggle="modal" data-target="#myModal_13"><i class="icon-qq_pay_in" aria-hidden="true"></i>Pay In</button>
 						<div class="mdl-tooltip" data-mdl-for="tt6">
 							Pay In
 						</div>
 					</li>
-					<li><button id="tt7" data-toggle="modal" data-target="#myModal_14"><i class="fa fa-gear" aria-hidden="true"></i>Pay Out</button>
+					<li><button id="tt7" data-toggle="modal" data-target="#myModal_14"><i class="icon-qq_pay_out" aria-hidden="true"></i>Pay Out</button>
 						<div class="mdl-tooltip" data-mdl-for="tt7">
 							Pay Out
 						</div>
 					</li>
-					<li><button id="tt8"><i class="fa fa-gear" aria-hidden="true"></i>Shift Close</button>
+					<li><button id="tt8"><i class="icon-qq_shift_close" aria-hidden="true"></i>Shift Close</button>
 						<div class="mdl-tooltip" data-mdl-for="tt8">
 							Shift Close
 						</div>
 					</li>
-					<li><button id="tt9" data-toggle="modal" data-target="#myModal_15"><i class="fa fa-gear" aria-hidden="true"></i>Change Table</button>
+					<li><button id="tt9" data-toggle="modal" data-target="#myModal_15"><i class="icon-qq_change_table" aria-hidden="true"></i>Change Table</button>
 						<div class="mdl-tooltip" data-mdl-for="tt9">
 							Change Table
 						</div>
 					</li>
-					<li><button id="tt10"><i class="fa fa-gear" aria-hidden="true"></i>Change Pin</button>
+					<li><button id="tt10"><i class="icon-qq_change_pin" aria-hidden="true"></i>Change Pin</button>
 						<div class="mdl-tooltip" data-mdl-for="tt10">
 							Change Pin
 						</div>
 					</li>
-					<li><button id="tt11"><i class="fa fa-gear" aria-hidden="true"></i>Split Bill</button>
+					<li><button id="tt11"><i class="icon-qq_split_bill" aria-hidden="true"></i>Split Bill</button>
 						<div class="mdl-tooltip" data-mdl-for="tt11">
 							Split Bill
 						</div>
 					</li>
-					<li><button id="tt12"><i class="fa fa-gear" aria-hidden="true"></i>Hold / Unhold <span>25</span></button>
+					<li><button id="tt12"><i class="icon-qq_hold_unhold" aria-hidden="true"></i>Hold / Unhold <span>25</span></button>
 						<div class="mdl-tooltip" data-mdl-for="tt12">
 							Hold / Unhold
 						</div>
@@ -214,7 +215,7 @@
 								<button data-toggle="modal" data-target="#myModal_23">Failed Message</button>
 							</div>
 							<div class="total_bill flexBox">
-								Total Amount Payable: <label>991.20</label>
+								Total Amount Payable: <label>&#8377; 991.20</label>
 							</div>
 						</div>
 						<div class="bill_butns flexBox">
@@ -1555,7 +1556,7 @@
 							<div class="col-sm-4">
 								<div class="flexBox al_it">
 									<button class="bill_btn"><i class="fa fa-minus"></i></button>
-									<span class="count_input"><input type="text" name="" class="bill_item_count"></span>
+									<span class="count_input"><input type="number" name="" class="bill_item_count"></span>
 									<button class="bill_btn"><i class="fa fa-plus"></i></button>
 								</div>
 							</div>
@@ -1571,7 +1572,7 @@
 							<div class="col-sm-4">
 								<div class="flexBox al_it">
 									<button class="bill_btn"><i class="fa fa-minus"></i></button>
-									<span class="count_input"><input type="text" name="" class="bill_item_count"></span>
+									<span class="count_input"><input type="number" name="" class="bill_item_count"></span>
 									<button class="bill_btn"><i class="fa fa-plus"></i></button>
 								</div>
 							</div>
@@ -1587,7 +1588,7 @@
 							<div class="col-sm-4">
 								<div class="flexBox al_it">
 									<button class="bill_btn"><i class="fa fa-minus"></i></button>
-									<span class="count_input"><input type="text" name="" class="bill_item_count"></span>
+									<span class="count_input"><input type="number" name="" class="bill_item_count"></span>
 									<button class="bill_btn"><i class="fa fa-plus"></i></button>
 								</div>
 							</div>
@@ -1603,7 +1604,7 @@
 							<div class="col-sm-4">
 								<div class="flexBox al_it">
 									<button class="bill_btn"><i class="fa fa-minus"></i></button>
-									<span class="count_input"><input type="text" name="" class="bill_item_count"></span>
+									<span class="count_input"><input type="number" name="" class="bill_item_count"></span>
 									<button class="bill_btn"><i class="fa fa-plus"></i></button>
 								</div>
 							</div>
