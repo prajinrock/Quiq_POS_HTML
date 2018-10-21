@@ -97,7 +97,7 @@ body{
 }
 .info_crumbs{
 	font-size: 12px;
-    color: #7b8594;
+    color: #658e90;
     font-weight: 500;
     margin-right: 20px;
     background: #ecf2f6;
@@ -105,14 +105,14 @@ body{
     border-radius: 3px;
 }
 .info_crumbs > label{
-	color: #7b8594;
+	color: #658e90;
 	font-weight: bold;
 }
 .top_bar_date{
 	height: 100%;
-	background-color: #ecf2f6;
+	background-color: rgba(255,255,255,.5);
 	font-size: 12px;
-	color: #9ba3af;
+	color: #658e90;
 	padding:0px 10px;
 	align-items: center;
 	-webkit-align-items: center;
@@ -156,7 +156,7 @@ body{
 
 .user_btn i{
 	font-size: 14px;
-	color: #15a4fa;
+	color: #fff;
 	padding-left: 5px;
 }
 .side_panel ul{
@@ -190,6 +190,7 @@ body{
 	-webkit-align-items: center;
 	-ms-align-items: center;
 	-moz-align-items: center;
+	box-sizing: border-box;
 }
 .side_panel ul li button img{
 	padding-right: 5px;
@@ -207,10 +208,10 @@ body{
 
 }
 .side_panel ul li button:hover, .side_panel ul li button:focus{
-	box-shadow:0px 40px 0px rgba(0,0,0,.1) inset;
+	box-shadow:0px 45px 0px rgba(0,0,0,.1) inset;
 }
 .side_panel ul li button:focus{
-	border-bottom: 1px solid #48b9c1;
+	border-left: 2px solid #48b9c1;
 }
 .side_panel ul li button:focus > i{
 	color: #48b9c1;
@@ -380,11 +381,12 @@ body{
 	-moz-justify-content: space-between;
 }
 .itm_adjst > div > label{
-	color: #3498db;
+	color: #222;
 	font-weight: 600;
 	display: inline-block;
 	width: 50%;
 	text-align: right;
+	font-size: 15px;
 }
 .total_bill{
 	background-color: #fff;
@@ -421,7 +423,7 @@ body{
 	border-color: #637c98;
 }
 .btn_deact{
-	background-color: #a1a6a6;
+	background-color: #6f7e95;
 	border-color: #a1a6a6;
 }
 .input_txt{
@@ -488,16 +490,16 @@ body{
 	outline: none;
 }
 .btn-primary{
-	background-color: #637c98;
+	background-color: #47bac1;
 	border:none;
 	color: #fff;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active{
-	background-color: #506a86;
+	background-color: #37a0a6;
 	outline: none;
 }
 .btn-success{
-	background-color: #16a085;
+	background-color: #47bac1;
 	border:none;
 	color: #fff;
 }
@@ -824,7 +826,7 @@ body{
 	display: block;
 	width: 12px;
 	height: 2px;
-	background-color: #7b8593;
+	background-color: #fff;
 	margin-bottom: 2px;
 	position: relative;
 	transition: all .5s;
@@ -936,7 +938,7 @@ ul, ol{
 	width: 100%;
 }
 .quiq_modal .modal-header{
-	background-color: #637c98;
+	background-color: #47bac1;
 	border-radius: 6px 6px 0px 0px;
 }
 .quiq_modal .modal-title{
@@ -959,8 +961,8 @@ input[type="text"], select, button{
 	transition: all .3s;
 }
 .main_frame_q input[type="text"]:focus, .main_frame_q select:focus, .select_box:focus{
-	border-color: #5583ee;
-	box-shadow: 0px 0px 5px #5583ee;
+	border-color: #47bac1;
+	box-shadow: 0px 0px 5px #47bac1;
 }
 .pop_fld_1 .select_box{
 	font-size: 15px;
@@ -1149,14 +1151,13 @@ input[type="text"], select, button{
 }
 .user_btn > a{
 	padding: 10px 20px;
-	color: #7b8593;
+	color: #fff;
 	transition: all .3s;
 	font-size: 13px;
-	font-weight: bold;
 }
 .user_btn > a:hover, .user_btn > a:focus{
 	text-decoration: none;
-	background-color: #ebf1f5;
+	background-color: rgba(0,0,0,.2);
 }
 .dropdown-menu{
 	border-radius: 0px;
@@ -1165,7 +1166,7 @@ input[type="text"], select, button{
 	background-color: #ebf1f5;
 }
 .dropdown-menu>li>a{
-	color: #7b8594;
+	color: #658e90;
 	transition: all .3s;
 	font-size: 13px;
 	font-weight: 400;
@@ -1175,8 +1176,8 @@ input[type="text"], select, button{
 	font-weight: 500;
 }
 .dropdown-menu>li>a:hover{
-	background-color: #d9e4eb;
-	color: #595c68;
+	background-color: #c4eaec;
+	color: #658e90;
 }
 .tabl_canvas{
 	width: 100%;
@@ -1734,7 +1735,7 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 	color: #fff;
 	background-color: transparent;
 	border:none;
-	background-color: #15a4fa;
+	background-color: #47bac1;
 	padding: 5px 20px;
 	border-radius:0px 3px 3px 0px;
 }
@@ -1754,6 +1755,41 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 	font-size: 24px;
 	color: #9ca7bb;
 	padding-right: 10px;
+}
+.error_pop{
+	font-size: 14px;
+	font-weight: bold;
+	color: #e74c3c;
+	text-align: left;
+	width: 100%;
+	background-color: #ffddda;
+	padding: 5px;
+	border-radius: 3px;
+	animation: notPop 1s;
+	margin: 5px 0px;
+}
+.succes_pop{
+	font-size: 14px;
+	font-weight: bold;
+	color: #27ae60;
+	text-align: left;
+	width: 100%;
+	background-color: #caeed9;
+	padding: 5px;
+	border-radius: 3px;
+	animation: notPop 1s;
+	margin: 5px 0px;
+}
+.copyright_qq{
+	font-size: 11px;
+	color: #7e8da5;
+	padding-top: 3px;
+	padding-left: 5px;
+	display: inline-block;
+}
+@keyframes notPop{
+	0%{letter-spacing: 10px;}
+	100%{letter-spacing:  normal;}
 }
 /*and (min-width: 1024px) ====================================================================*/
 @media (min-width: 767px){

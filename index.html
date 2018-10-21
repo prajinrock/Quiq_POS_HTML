@@ -125,15 +125,16 @@
 							<div class="bill_item_list">
 								<div class="row row_head">
 									<div class="col-sm-1">#</div>
-									<div class="col-sm-6">Product</div>
+									<div class="col-sm-5">Product</div>
 									<div class="col-sm-2">Price</div>
 									<div class="col-sm-3">Quantity</div>
+									<div class="col-sm-1"></div>
 								</div>
 								<div class="row">
 									<div class="col-sm-1">
 										1
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-5">
 										<button class="bill_delete"><i class="fa fa-times"></i></button> Tandoori Chicken
 										<label class="modifrNote"><i class="fa fa-pencil-square" aria-hidden="true" title="Modifier"></i>safadsa</label>
 										<label class="addonNote"><i class="fa fa-puzzle-piece" aria-hidden="true" title="Add On"></i>sasdadasdadsd</label>
@@ -147,12 +148,17 @@
 											<button class="bill_btn"><i class="fa fa-plus"></i></button>
 										</div>
 									</div>
+									<div class="col-sm-1">
+										<div class="flexBox al_it js_cnt">
+											<button class="bill_btn"><i class="fa fa-comment"></i></button>
+										</div>
+									</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-1">
 										1
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-5">
 										<button class="bill_delete"><i class="fa fa-times"></i></button> Tandoori Chicken<label class="remarkNote">sa dmsad kasdlkasmdlkmalkd s</label>
 									</div>
 									<div class="col-sm-2">12345</div>
@@ -163,12 +169,17 @@
 											<button class="bill_btn"><i class="fa fa-plus"></i></button>
 										</div>
 									</div>
+									<div class="col-sm-1">
+										<div class="flexBox al_it js_cnt">
+											<button class="bill_btn"><i class="fa fa-comment"></i></button>
+										</div>
+									</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-1">
 										1
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-5">
 										<button class="bill_delete"><i class="fa fa-times"></i></button> Tandoori Chicken<label class="remarkNote">sa dmsad kasdlkasmdlkmalkd s</label>
 									</div>
 									<div class="col-sm-2">12345</div>
@@ -179,12 +190,17 @@
 											<button class="bill_btn"><i class="fa fa-plus"></i></button>
 										</div>
 									</div>
+									<div class="col-sm-1">
+										<div class="flexBox al_it js_cnt">
+											<button class="bill_btn"><i class="fa fa-comment"></i></button>
+										</div>
+									</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-1">
 										1
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-5">
 										<button class="bill_delete"><i class="fa fa-times"></i></button> Tandoori Chicken<label class="remarkNote">sa dmsad kasdlkasmdlkmalkd s</label>
 									</div>
 									<div class="col-sm-2">12345</div>
@@ -193,6 +209,11 @@
 											<button class="bill_btn"><i class="fa fa-minus"></i></button>
 											<span class="count_input"><input type="text" name="" class="bill_item_count"></span>
 											<button class="bill_btn"><i class="fa fa-plus"></i></button>
+										</div>
+									</div>
+									<div class="col-sm-1">
+										<div class="flexBox al_it js_cnt">
+											<button class="bill_btn"><i class="fa fa-comment"></i></button>
 										</div>
 									</div>
 								</div>
@@ -373,7 +394,7 @@
 			</div>
 		</div>
 		<div class="footer_bar">
-			
+			<span class="copyright_qq">&copy;2018 QuiqPOS. All rights reserved.</span>
 		</div>
 	</div>
 	<!--PRELOADER-->
@@ -1423,6 +1444,9 @@
 	        </div>
 	        <div class="modal-body">
 				<div class="modal_scroll flexBox fl_wrap js_cnt">
+					<div class="succes_pop">
+						<span>Your Changes Saved Successfully</span>
+					</div>
 					<div class="modal_form_single flexBox fl_wrap">
 						<div class="single_form_box flexBox al_it">
 							<label>Current Password</label>
@@ -1437,10 +1461,13 @@
 							<input type="password" name="" placeholder="Confirm Password">
 						</div>
 					</div>
+					<div class="error_pop">
+						<span>Error! Please try again.</span>
+					</div>
 				</div>
 	          </div>
 	        <div class="modal-footer">
-	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
 	        </div>
 	      </div>
