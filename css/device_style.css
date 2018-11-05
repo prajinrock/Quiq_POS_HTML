@@ -1,5 +1,5 @@
 /*and (min-width: 1024px) ====================================================================*/
-@media (min-width: 1024px){
+@media (min-width: 1024px) and (max-width: 1365px){
 	.hide_div{
 		/*display: none;*/
 		transition: all .3s;
@@ -7,6 +7,9 @@
 	}
 	.hide_div button{
 		font-size: 0px !important;
+	}
+	.user_btn > a{
+		padding: 10px;
 	}
 }
 @media (max-width: 1024px){

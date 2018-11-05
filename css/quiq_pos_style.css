@@ -217,9 +217,6 @@ body{
 	box-shadow:0px 45px 0px #47bac1 inset;
 	color: #fff;
 }
-.side_panel ul li button:focus{
-	border-left: 2px solid #303e4e;
-}
 .side_panel ul li button:hover > i, .side_panel ul li button:focus > i{
 	color: #fff;
 }
@@ -1259,7 +1256,7 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 	border-radius: 3px;
 	box-sizing: border-box;
 	padding: 5px 10px;
-	font-size: 14px;
+	font-size: 12px;
 }
 .discount_row{
 	width: 100%;
@@ -1946,4 +1943,39 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 }
 .itemCartContent{
 	width: calc(100% - 50px);
+}
+.remvBtn{
+	width: 22px;
+	height: 22px;
+	background-color: transparent;
+	border: 1px solid #e74c3c;
+	font-size: 8px;
+	border-radius:12px;
+	color: #e74c3c;
+	text-align: center;
+}
+.remvBtn:hover{
+	box-shadow: 0px 25px 0px #e74c3c inset;
+	color: #fff;
+}
+.itemCartExtra{
+	padding-top: 5px;
+}
+.itemCartExtra > span > i{
+	font-size: 14px;
+}
+.itemCartExtra > span:nth-child(2), .itemCartExtra > span:nth-child(3){
+	padding-left: 10px;
+}
+.itemModifier > i{
+	color: #47bac1;
+	padding-right: 5px;
+}
+.itemAddOn > i{
+	color: #27ae60;
+	padding-right: 5px;
+}
+.itemRemark > i{
+	color: #3498db;
+	padding-right: 5px;
 }

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?i7nofz');
-  src:  url('fonts/icomoon.eot?i7nofz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?i7nofz') format('truetype'),
-    url('fonts/icomoon.woff?i7nofz') format('woff'),
-    url('fonts/icomoon.svg?i7nofz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vmg8gd');
+  src:  url('fonts/icomoon.eot?vmg8gd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vmg8gd') format('truetype'),
+    url('fonts/icomoon.woff?vmg8gd') format('woff'),
+    url('fonts/icomoon.svg?vmg8gd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,90 +24,99 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.pos-qq_caret:before {
-  content: "\e91c";
-}
 .pos-qq_account:before {
   content: "\e900";
 }
 .pos-qq_add_user:before {
   content: "\e901";
 }
-.pos-qq_back:before {
+.pos-qq_addon:before {
   content: "\e902";
 }
-.pos-qq_cancel:before {
+.pos-qq_back:before {
   content: "\e903";
 }
-.pos-qq_category:before {
+.pos-qq_cancel:before {
   content: "\e904";
 }
-.pos-qq_disk:before {
+.pos-qq_caret:before {
   content: "\e905";
 }
-.pos-qq_edit:before {
+.pos-qq_category:before {
   content: "\e906";
 }
-.pos-qq_folder:before {
+.pos-qq_disk:before {
   content: "\e907";
 }
-.pos-qq_hold:before {
+.pos-qq_edit:before {
   content: "\e908";
 }
-.pos-qq_holds:before {
+.pos-qq_folder:before {
   content: "\e909";
 }
-.pos-qq_logout:before {
+.pos-qq_hold:before {
   content: "\e90a";
 }
-.pos-qq_merge_kot:before {
+.pos-qq_holds:before {
   content: "\e90b";
 }
-.pos-qq_new:before {
+.pos-qq_logout:before {
   content: "\e90c";
 }
-.pos-qq_payin:before {
+.pos-qq_merge_kot:before {
   content: "\e90d";
 }
-.pos-qq_payout:before {
+.pos-qq_modifier:before {
   content: "\e90e";
 }
-.pos-qq_pin:before {
+.pos-qq_new:before {
   content: "\e90f";
 }
-.pos-qq_remark:before {
+.pos-qq_payin:before {
   content: "\e910";
 }
-.pos-qq_remove:before {
+.pos-qq_payout:before {
   content: "\e911";
 }
-.pos-qq_search:before {
+.pos-qq_pin:before {
   content: "\e912";
 }
-.pos-qq_settle:before {
+.pos-qq_remark:before {
   content: "\e913";
 }
-.pos-qq_shift:before {
+.pos-qq_remarked:before {
   content: "\e914";
 }
-.pos-qq_split:before {
+.pos-qq_remove:before {
   content: "\e915";
 }
-.pos-qq_sub_total:before {
+.pos-qq_search:before {
   content: "\e916";
 }
-.pos-qq_table:before {
+.pos-qq_settle:before {
   content: "\e917";
 }
-.pos-qq_viewbill:before {
+.pos-qq_shift:before {
   content: "\e918";
 }
-.pos-qq_voidbill:before {
+.pos-qq_split:before {
   content: "\e919";
 }
-.pos-qq_voidkot:before {
+.pos-qq_sub_total:before {
   content: "\e91a";
 }
-.pos-qq_wheel:before {
+.pos-qq_table:before {
   content: "\e91b";
+}
+.pos-qq_viewbill:before {
+  content: "\e91c";
+}
+.pos-qq_voidbill:before {
+  content: "\e91d";
+}
+.pos-qq_voidkot:before {
+  content: "\e91e";
+}
+.pos-qq_wheel:before {
+  content: "\e91f";
 }

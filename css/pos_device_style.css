@@ -1,19 +1,25 @@
-.hide_div{
+@media screen and (min-width: 1366px){
+	.hide_div{
 	display: none;
 	transition: all .3s;
 	width: 220px !important;
+	}
+	.hide_div button{
+		font-size: 0px !important;
+	}
 }
-.hide_div button{
-	font-size: 0px !important;
-}
+
 /*and (min-width: 1024px) ====================================================================*/
 @media screen and (max-width: 1365px) and (min-width: 1024px) {
+	.user_btn > a{
+		padding: 10px;
+	}
 	.hide_div{
 		/*display: none;*/
 		width: 220px !important;
 	}
 	.hide_div button{
-		/*font-size: 0px !important;*/
+		font-size: 12px !important;
 	}
 	.brand_button{
 		margin-left: 15px;
@@ -41,6 +47,14 @@
 	.info_crumbs{
 		line-height: 1.2;
 		font-size: 11px;
+		margin-right: 10px;
+	}
+	.user_btn > a > i{
+		padding-left: 5px;
+		font-size: 8px;
+	}
+	.user_btn > a{
+		min-width: 80px;
 	}
 }
 @media (max-width: 1023px){
@@ -64,6 +78,7 @@
 		display: none;
 		top: 40px;
 		left: 0px;
+		box-shadow: 0px 0px 7px rgba(0,0,0,.3);
 	}
 	.mobHid{
 		display: none;
@@ -74,6 +89,9 @@
 	.main_frame_q{
 		width: 100%;
 		min-height: 100%;
+	}
+	.hide_div button{
+		font-size: 12px !important;
 	}
 	.right_outer_frame{
 		flex-direction: column;
