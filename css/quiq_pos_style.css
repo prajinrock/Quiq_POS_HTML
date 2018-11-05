@@ -48,6 +48,8 @@ body{
 	width: 100%;
 	background-color: #d8eced;
 	height: 26px;
+	position: fixed;
+	bottom: 0px;
 }
 .middle_section_q{
 	width: 100%;
@@ -154,10 +156,15 @@ body{
 	cursor: pointer;
 }
 
-.user_btn i{
-	font-size: 14px;
+.user_btn > a > i{
+	font-size: 10px;
 	color: #fff;
-	padding-left: 5px;
+	padding-left: 10px;
+}
+.user_btn .dropdown-menu i{
+	font-size: 14px;
+	color: #39a7ae;
+	padding-right: 10px;
 }
 .side_panel ul{
 	list-style: none;
@@ -229,7 +236,7 @@ body{
 	height: 100%;
 	box-sizing: border-box;
 	padding:15px;
-	overflow-y: auto;
+	overflow: auto;
 }
 .item_section{
 	width: 56%;
@@ -1634,7 +1641,7 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 	position: relative;
 	box-shadow: 0px 0px 7px rgba(0,0,0,.4);
 	border: 1px solid #47bac1 !important;
-	background-color: #ccf4f6 !important;
+	background-color: #e8f2f1 !important;
 }
 .itmName{
 	padding-right: 20px;
@@ -1805,154 +1812,138 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 	0%{letter-spacing: 10px;}
 	100%{letter-spacing:  normal;}
 }
-/*and (min-width: 1024px) ====================================================================*/
-@media (min-width: 767px){
-	.hide_div{
-		/*display: none;*/
-		transition: all .3s;
-		width: 60px !important;
-	}
-	.hide_div button{
-		font-size: 0px !important;
-	}
+.item_cart{
+	width: 100%;
+	background-color: #fff;
 }
-@media (max-width: 767px){
-	.top_bar_section{
-		
-	}
-	.brand_button{
-		width: 30%;
-		flex-direction: row-reverse;
-		-webkit-flex-direction: row-reverse;
-		-moz-flex-direction: row-reverse;
-		-ms-flex-direction: row-reverse;
-	}
-	.info_crumbs{
-		display: none;
-	}
-	.side_panel{
-		width: 100%;
-		position: fixed;
-		z-index: 5;
-		display: none;
-		top: 40px;
-	}
-	.mobHid{
-		display: none;
-	}
-	.hide_div{
-		display: block;
-	}
-	.main_frame_q{
-		width: 100%;
-		min-height: 100%;
-	}
-	.right_outer_frame{
-		flex-direction: column;
-		height: auto;
-	}
-	.bill_section{
-		width: 100%;
-	}
-	.item_section{
-		width: 100%;
-		padding: 10px;
-	}
-	.qty_line{
-		width: 30%;
-	}
-	.itm_qty{
-		width: 30%;
-	}
-	.itm_qty > button{
-		font-size: 10px;
-	}
-	.head_selection_2 {
-		flex-wrap: wrap;
-	}
-	.head_selection_2 .search_box_covr{
-		width: 60%;
-	}
-	.head_selection_2 .search_box_covr, .head_selection_2 .small_input, .head_selection_2 .btn_quiq{
-		margin-bottom: 10px;
-	}
-	.search_box_covr .input_txt{
-		width: 100%;
-	}
-	.head_selection_2 .small_input{
-		margin-left: 0px;
-	}
-	.menu_pin > span:nth-child(1){
-		transform: rotate(-45deg);
-    	width: 16px;
-	}
-	.menu_pin > span:nth-child(2){
-		display: none;
-	}
-	.menu_pin > span:nth-child(3){
-		transform: rotate(45deg);
-	    width: 16px;
-	    margin-top: -4px;
-	}
-	.arrw > span:nth-child(1){
-		transform: rotate(0deg);
-    	width: 12px;
-    	margin-top: 0px;
-	}
-	.arrw > span:nth-child(2){
-		display: block;
-		margin-top: 0px;
-	}
-	.arrw > span:nth-child(3){
-		transform: rotate(0deg);
-	    width: 12px;
-	    margin-top: 0px;
-	}
-	
-	.prod_itm{
-		width: 30%;
-		height: 100px;
-	}
-	.footer_bar{
-		display: none;
-	}
-	.middle_section_q{
-		height: 100%;
-		margin-top: 45px;
-	}
-	.hide_div .mdl-tooltip{
-		display: none;
-	}
-	.waiter_box{
-		width: 100%;
-	}
-	.itm_qty {
-	    width: 35%;
-	}
-	.qty_line{
-		width: 35%;
-	}
-	.bill_item_list .col-xs-11{
-		padding-bottom: 10px;
-	}
-	.BillPrice{
-		font-weight: bold;
-	}
-	.search_box2_covr{
-		margin-bottom: 10px;
-	}
-	.sub_cat_btn{
-		font-size: 13px;
-	}
-	.prod_category{
-		width: 30%;
-	}
-	.top_bar{
-		position: fixed;
-		z-index: 99;
-	}
-	.side_panel ul li button{
-		padding-top: 7px;
-		padding-bottom: 5px;
-	}
+.cart_itm_bx{
+	border-bottom: 1px solid #E1E8EE;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+	-moz-align-items: flex-start;
+	-ms-align-items: flex-start;
+	position: relative;
+}
+.itemCount{
+	width: 50px;
+	font-size: 11px;
+	text-align: center;
+	padding-left: 10px;
+}
+.itemCount > label{
+	display: block;
+	padding: 5px;
+	background-color: #d6e8e7;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	line-height: 1.7;
+	color: #355254;
+}
+.itemCart_Item{
+	max-width: 90%;
+}
+.itemMainName{
+	font-size: 12px;
+	font-weight: bold;
+}
+.itemModifier{
+	font-size: 11px;
+}
+.itemAddOn{
+	font-size: 11px;
+}
+.itemRemark{
+	font-size: 11px;
+}
+.QtyControl{
+	width: 110px;
+}
+.QtyControl > button{
+	background-color: #47bac1;
+	border:none;
+	margin: 0px;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	height: 24px;
+}
+.QtyControl > button:nth-child(1){
+	border-radius: 5px 0px 0px 5px;
+}
+.QtyControl > button:nth-last-child(1){
+	border-radius: 0px 5px 5px 0px;
+}
+.QtyControl > input[type="text"]{
+	width: 54px;
+	border:none;
+	margin: 0px;
+	box-sizing: border-box;
+	height: 24px;
+	background-color: #f1f4f7;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 12px;
+}
+.QtyControl > input[type="text"]:focus{
+	box-shadow: none;
+	background-color: #d6e8e7;
+}
+.ItemRemove{
+	width: 30px;
+	position: absolute;
+	top: 5px;
+	right: 0px;
+}
+.ItemRemoveBtn{
+	background-color: #fff;
+	border:1px solid #e74c3c;
+	width: 20px;
+	height: 20px;
+	border-radius: 12px;
+	font-size: 9px;
+	line-height: .7;
+	text-align: center;
+	color: #e74c3c;
+	padding: 0px;
+}
+.itemCartPrice{
+	font-size: 12px;
+	font-weight: bold;
+	width: 130px;
+	height: 24px;
+	align-items: center;
+}
+.itemCartPrice:before{
+	content: "Price ₹" ;
+	white-space: pre;
+	color: #999;
+}
+.RemarkAddBx{
+	width: 30px;
+}
+.RemarkAddBtn{
+	/*background-color: #d6e8e7;
+	border:1px solid #1abc9c;*/
+	width: 24px;
+	height: 24px;
+	/*border-radius: 12px;*/
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+	color: #3498db;
+	padding: 0px;
+	background-color: transparent;
+	border:none;
+}
+.itemCartControls{
+	width: 100%;
+	padding-top: 5px;
+	justify-content: flex-end;
+}
+.itemCartContent{
+	width: calc(100% - 50px);
 }

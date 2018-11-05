@@ -1,0 +1,151 @@
+/*and (min-width: 1024px) ====================================================================*/
+@media (min-width: 1024px){
+	.hide_div{
+		/*display: none;*/
+		transition: all .3s;
+		width: 60px !important;
+	}
+	.hide_div button{
+		font-size: 0px !important;
+	}
+}
+@media (max-width: 1024px){
+	.top_bar_section{
+		
+	}
+	.brand_button{
+		width: 30%;
+		flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+		-moz-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+	}
+	.info_crumbs{
+		display: none;
+	}
+	.side_panel{
+		width: 100%;
+		position: fixed;
+		z-index: 5;
+		display: none;
+		top: 40px;
+	}
+	.mobHid{
+		display: none;
+	}
+	.hide_div{
+		display: block;
+	}
+	.main_frame_q{
+		width: 100%;
+		min-height: 100%;
+	}
+	.right_outer_frame{
+		flex-direction: column;
+		height: auto;
+	}
+	.bill_section{
+		width: 100%;
+	}
+	.item_section{
+		width: 100%;
+		padding: 10px;
+	}
+	.qty_line{
+		width: 30%;
+	}
+	.itm_qty{
+		width: 30%;
+	}
+	.itm_qty > button{
+		font-size: 10px;
+	}
+	.head_selection_2 {
+		flex-wrap: wrap;
+	}
+	.head_selection_2 .search_box_covr{
+		width: 60%;
+	}
+	.head_selection_2 .search_box_covr, .head_selection_2 .small_input, .head_selection_2 .btn_quiq{
+		margin-bottom: 10px;
+	}
+	.search_box_covr .input_txt{
+		width: 100%;
+	}
+	.head_selection_2 .small_input{
+		margin-left: 0px;
+	}
+	.menu_pin > span:nth-child(1){
+		transform: rotate(-45deg);
+    	width: 16px;
+	}
+	.menu_pin > span:nth-child(2){
+		display: none;
+	}
+	.menu_pin > span:nth-child(3){
+		transform: rotate(45deg);
+	    width: 16px;
+	    margin-top: -4px;
+	}
+	.arrw > span:nth-child(1){
+		transform: rotate(0deg);
+    	width: 12px;
+    	margin-top: 0px;
+	}
+	.arrw > span:nth-child(2){
+		display: block;
+		margin-top: 0px;
+	}
+	.arrw > span:nth-child(3){
+		transform: rotate(0deg);
+	    width: 12px;
+	    margin-top: 0px;
+	}
+	
+	.prod_itm{
+		width: 30%;
+		height: 100px;
+	}
+	.footer_bar{
+		display: none;
+	}
+	.middle_section_q{
+		height: 100%;
+		margin-top: 45px;
+	}
+	.hide_div .mdl-tooltip{
+		display: none;
+	}
+	.waiter_box{
+		width: 100%;
+	}
+	.itm_qty {
+	    width: 35%;
+	}
+	.qty_line{
+		width: 35%;
+	}
+	.bill_item_list .col-xs-11{
+		padding-bottom: 10px;
+	}
+	.BillPrice{
+		font-weight: bold;
+	}
+	.search_box2_covr{
+		margin-bottom: 10px;
+	}
+	.sub_cat_btn{
+		font-size: 13px;
+	}
+	.prod_category{
+		width: 30%;
+	}
+	.top_bar{
+		position: fixed;
+		z-index: 99;
+	}
+	.side_panel ul li button{
+		padding-top: 7px;
+		padding-bottom: 5px;
+	}
+}
