@@ -286,6 +286,8 @@ body{
 	width: 100%;
 	margin-top: 20px;
 	box-shadow: 0px 0px 3px rgba(0,0,0,.2);
+	border-radius: 5px;
+	overflow: hidden;
 }
 .bill_title{
 	background-color: #637c98;
@@ -1815,6 +1817,7 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 	background-color: #fff;
 }
 .cart_itm_bx{
+	border: 1px solid rgba(0,0,0,0);
 	border-bottom: 1px solid #E1E8EE;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -1903,7 +1906,7 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 	height: 20px;
 	border-radius: 12px;
 	font-size: 9px;
-	line-height: .7;
+	line-height: -1;
 	text-align: center;
 	color: #e74c3c;
 	padding: 0px;
