@@ -157,9 +157,9 @@ body{
 }
 
 .user_btn > a > i{
-	font-size: 10px;
+	font-size: 8px;
 	color: #fff;
-	padding-left: 10px;
+	padding-left: 5px;
 }
 .user_btn .dropdown-menu i{
 	font-size: 14px;
@@ -197,6 +197,7 @@ body{
 	-ms-align-items: center;
 	-moz-align-items: center;
 	box-sizing: border-box;
+	text-align: left;
 }
 .side_panel ul li button img{
 	padding-right: 5px;
@@ -1165,7 +1166,7 @@ input[type="text"], select, button{
 	text-transform: uppercase;
 }
 .user_btn > a{
-	padding: 10px 20px;
+	padding: 10px 15px;
 	color: #fff;
 	transition: all .3s;
 	font-size: 13px;
