@@ -82,7 +82,7 @@ body{
 	text-align: center;
 }
 .logo_image > img{
-	height: 100%;
+	height: 30px;
 	width: auto;
 }
 .top_bar_section{
@@ -390,6 +390,7 @@ body{
 	-ms-justify-content: space-between;
 	-moz-justify-content: space-between;
 	border-top: 1px dashed rgba(0,0,0,.2);
+	height: 82px;
 }
 .itm_adjst > div{
 	width: 46%;
@@ -413,6 +414,7 @@ body{
 	font-size: 16px;
 	font-weight: 600;
 	color: #637c98;
+	height: 44px;
 }
 .total_bill > label{
 	color: #e74c3c;
@@ -1827,6 +1829,8 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 .item_cart{
 	width: 100%;
 	background-color: #fff;
+	height: calc(100% - 126px);
+	overflow: auto;
 }
 .cart_itm_bx{
 	border: 1px solid rgba(0,0,0,0);
