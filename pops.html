@@ -26,6 +26,7 @@
 			<button data-toggle="modal" data-target="#NC_Pos">NC POS</button>
 			<button data-toggle="modal" data-target="#settleup">Settle</button>
 			<button data-toggle="modal" data-target="#NewModify">New Modifier</button>
+			<button data-toggle="modal" data-target="#AddOn">Addon</button>
 		</div>
 		
 	</div>
@@ -479,6 +480,105 @@
 	        <div class="modal-body">
 				<div class="modal_scroll flexBox fl_wrap js_cnt">
 					
+					<div class="tabl_canvas flexBox">
+							<div class="quiq_tabl_2 flexBox tabl_gr_grn">
+								<img src="images/salt-and-pepper.svg">
+								<div class="tabl_name">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+									  <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input">
+									</label>
+									Salt
+								</div>
+							</div>
+							<div class="quiq_tabl_2 flexBox tabl_gr_grn">
+								<img src="images/salt-and-pepper.svg">
+								<div class="tabl_name">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-5">
+									  <input type="checkbox" id="checkbox-5" class="mdl-checkbox__input">
+									</label>
+									Pepper
+								</div>
+							</div>
+							<div class="quiq_tabl_2 flexBox tabl_gr_grn">
+								<img src="images/salt-and-pepper.svg">
+								<div class="tabl_name">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-6">
+									  <input type="checkbox" id="checkbox-6" class="mdl-checkbox__input">
+									</label>
+									Sauce
+								</div>
+							</div>
+						</div>
+					
+				</div>
+	          </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+	          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="modal fade quiq_modal" id="AddOn" role="dialog"><!--POP UP-->
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Add On</h4>
+	        </div>
+	        <div class="modal-body">
+				<div class="modal_scroll flexBox fl_wrap js_cnt pad_cols">
+					<div class="header_addOn">Add Ons</div>
+					<div class="row wid100 disc_head">
+						<div class="col-sm-1">Sl</div>
+						<div class="col-sm-1"></div>
+						<div class="col-sm-4">Item Name</div>
+						<div class="col-sm-2">UOM</div>
+						<div class="col-sm-2">Rate</div>
+						<div class="col-sm-2">Quantity</div>
+					</div>
+					<div class="row wid100">
+						<div class="col-sm-1">1</div>
+						<div class="col-sm-1">
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="addOnCheck-1">
+							  <input type="checkbox" id="addOnCheck-1" class="mdl-checkbox__input">
+							</label>
+						</div>
+						<div class="col-sm-4">Al-Faham</div>
+						<div class="col-sm-2">KG</div>
+						<div class="col-sm-2">200</div>
+						<div class="col-sm-2">
+							<div class="QtyControl flexBox">
+								<button>−</button>
+								<input type="text" name="" placeholder="Qty">
+								<button>+</button>
+							</div>
+						</div>
+					</div>
+					<div class="addOnTable" style="display: none;">
+						<table>
+							<tr>
+								<th>Sl.No</th>
+								<th></th>
+								<th>Item Name</th>
+								<th>UOM</th>
+								<th>Rate</th>
+								<th>Quantity</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td></td>
+								<td>Al-Faham</td>
+								<td>KG</td>
+								<td>200</td>
+								<td class="flexBox quatity_count">
+									<span>+</span>
+									<span><input type="number" name=""></span>
+									<span>-</span>
+								</td>
+							</tr>
+						</table>
+					</div>
 					<div class="tabl_canvas flexBox">
 							<div class="quiq_tabl_2 flexBox tabl_gr_grn">
 								<img src="images/salt-and-pepper.svg">

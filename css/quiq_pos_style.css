@@ -1999,3 +1999,35 @@ input[type="text"], select, input[type="password"], input[type="number"]{
 	color: #3498db;
 	padding-right: 5px;
 }
+/*21-01-2019*/
+.addOnTable{
+	width: 100%;
+}
+.addOnTable table{
+	width: 100%;
+}
+.quatity_count > span{
+	display: block;
+}
+.header_addOn{
+	background-color: #16a085;
+	padding: 10px 15px;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.category_name_header{
+	width: calc(100% - 10px);
+	border-bottom: 1px dashed #ccc;
+	border-top: 1px dashed #ccc;
+	font-size: 15px;
+	font-weight: 500;
+	margin: 10px 0px;
+	padding: 5px 0px;
+	box-sizing: border-box;
+	color: #47bac1;
+	text-align: center;
+}
